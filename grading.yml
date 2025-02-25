@@ -1,0 +1,13 @@
+
+- title: "Individual Project - 30%"
+  task: "Students will work individually to re-create an existing toy and use the components for a different design goal."
+  evaluation: "Students will be graded based on a set of design rubrics."
+- title: "Group Project - 50%"
+  task: "Students will engage in group projects aimed at implementing an interactive and creative Robot Design to gain hands-on practical experience."
+  evaluation: "Project teams will be graded based on consistent participation throughout the semester, deliverables, demonstrated mastery of literature and technical content. Graduate students are assigned a research paper related to the project."
+- title: "Class Involvement - 20%"
+  task: "The class involvement is split into:"
+  sub_tasks:
+    - "Quizzes"
+    - "Reflections on Guest Lectures"
+    - "Attentiveness and Interest"

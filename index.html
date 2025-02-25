@@ -1,0 +1,405 @@
+---
+layout: default
+title: Class Schedule
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+  <meta name="twitter:widgets:theme" content="light">
+  <meta property="og:title" content="Design For Hri Course Website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="Your-Image-Url" />
+  <meta property="og:description" content="This is a Robotics course website." />
+  <title>Design For HRI | UMich</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/class-logo.png">
+  <link rel="stylesheet" href="font/fontawesome-free/css/all.css">
+  <!-- Font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CLato:300,400,700' rel='stylesheet'
+    type='text/css'>
+  <!-- Css -->
+  <link rel="stylesheet" href="css/core.min.css" />
+  <link rel="stylesheet" href="css/skin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body class="shop">
+  <div class="wrapper reveal-side-navigation">
+    <div class="wrapper-inner">
+      <!-- Content -->
+      <div class="content clearfix">
+        <!-- bio section-->
+        <section class="section-block feature-3">
+          <div class="feature-content">
+            <div class="feature-content-inner left pt-80 pb-30">
+              <div class="row">
+                <div class="width-12">
+                  <div class="row">
+                    <div class="column width-2">
+                      <div class="thumbnail mb-20">
+                        <img class="profile-image large rounded" src="img/class-logo.png" alt="Course image"
+                          id="profileimage" style="max-height:100%;">
+                        <h6 style="padding-top: 1rem; color: #000000;">
+                          <ul style="list-style: none; margin: 0; padding: 0; text-align: left;">
+                            <li style="color: #000000; font-size: 8pt; padding-bottom: 0.2rem;">
+                              <a href="mailto:robopati@umich.edu" target="_blank"
+                                style="text-decoration: none; border: none;"><img
+                                  style="width: 14px; height: 14px; margin-left: 28px; margin-right: 8px; vertical-align: middle;"
+                                  src="snippets/email.png" /></a>
+                              <a href="https://twitter.com/robopati" target="_blank"
+                                style="text-decoration: none; border: none;"><img
+                                  style="width: 14px; height: 14px; margin-right: 8px; vertical-align: middle;"
+                                  src="snippets/twitter.png" /></a>
+                              <a href="https://www.linkedin.com/in/robopati" target="_blank"
+                                style="text-decoration: none; border: none;"><img
+                                  style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;"
+                                  src="snippets/linkedin.png" /></a>
+                              <a href="https://github.com/studiorobot" target="_blank"
+                                style="text-decoration: none; border: none;"><img
+                                  style="width: 16px; height: 16px; vertical-align: middle;"
+                                  src="snippets/git.png" /></a>
+                            </li>
+                          </ul>
+                        </h6>
+                        <div
+                          style="display:flex; justify-content:space-between; margin-top: -1.5rem; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                          <h5
+                            style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';font-size: smaller;">
+                            <strong>SCHEDULE</strong>
+                          </h5>
+                        </div>
+                        {% for session in site.data.schedule %}
+                        <div
+                          style=" display: flex; justify-content:left; column-gap: 10px;color: #333;font-size: 10pt;">
+                          <p style="font-family: 'Arial';font-size:7pt;">{{ session.date }}:</p>
+                          <p style="font-family: 'Arial';font-size:7pt;">{{ session.class }}</p>
+                        </div>
+                        {% endfor %}
+                        <div
+                          style="display:flex; justify-content:space-between; margin-top: 0.5rem; border-top: 1px #636363 dashed; padding-top: 0.5rem;">
+                          <h5
+                            style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';font-size: smaller;">
+                            <strong>GRADING</strong>
+                          </h5>
+                        </div>
+                        {% for item in site.data.grading %}
+                        <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                          <p style="font-family: 'Arial';font-size:7pt;">{{ item.title }}</p>
+                        </div>
+                        <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                          <p style="font-family: 'Arial';font-size:7pt;">{{ item.task }}</p>
+                        </div>
+                        <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                          <p style="font-family: 'Arial';font-size:7pt;">{{ item.evaluation }}</p>
+                        </div>
+                        {% if item.sub_tasks %}
+                        <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                          <p style="font-family: 'Arial';font-size:7pt;">{{ item.task }}</p>
+                        </div>
+                        {% for sub_task in item.sub_tasks %}
+                        <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                          <p style="font-family: 'Arial';font-size:7pt;">{{ sub_task }}</p>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                        {% if item != site.data.grading.last %}
+                        <div
+                          style="display: flex; justify-content:left; border-top: 1px #b8b6b6 dashed; column-gap: 10px;color: #333;">
+                          <p style="font-family: 'Arial';font-size:7pt;"></p>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                    <div class="column width-9">
+                      <div class="row" style="text-align:justify;">
+                        <div class="column width-5">
+                          <h5 style="margin-top:-1rem; margin-top:0.5rem;color: #FFCB05 ; font-family: 'Arial';font-size: 14pt;">
+                            <strong>{{ site.data.course.title }}</strong>
+                          </h5>
+                          <h5 style="color: #0154a1; margin-top:-1.5rem;font-family: 'Arial';font-size: 12pt;">
+                            <strong>Instructor: <a href="{{ site.data.course.instructor_url }}" target="_blank" class="no-underline">{{ site.data.course.instructor_name }}</a></strong><br />
+                            <strong>GSI: <a href="{{ site.data.course.gsi_url }}">{{ site.data.course.gsi_name }}</a> </strong><br /><br />
+                            {{ site.data.course.department }}<br />{{ site.data.course.university }}<br /> Office: {{ site.data.course.office }}
+                          </h5>
+                        </div>
+                        <div class="column width-7" style="text-align:left;">
+                          <div style="padding: 0.5em 1em; border: 2px dashed #0154a1; background-color: #fef0b9; border-radius: 5px; margin-top: 0em; margin-bottom: 1.5rem;">
+                            <p style="color: #504f4f; font-family: 'Arial';font-size: 9pt; margin-top:-0.7em;">
+                              This Course is running in {{ site.data.course.semester }} and will be offered again in {{ site.data.course.next_offering }}
+                            </p>
+                            <p style="color: #0154a1; font-family: 'Arial';font-size: 10pt;"><strong>Lectures</strong></p>
+                            <p style="color: #504f4f; font-family: 'Arial';font-size: 9pt; margin-top:-0.7em;">
+                              <span style="margin-right: 20px;"><i class="fa-solid fa-calendar-days"></i> {{ site.data.course.lectures.days }}</span>
+                              <span style="margin-right: 28px;"><i class="fa-solid fa-clock"></i> {{ site.data.course.lectures.time }}</span>
+                              <span><i class="fa-solid fa-building"></i> {{ site.data.course.lectures.location }}</span>
+                            </p>
+                            <p style="color: #0154a1; font-family: 'Arial'; font-size: 10pt;"><strong>Office Hours</strong></p>
+                            <p style="color: #504f4f; font-family: 'Arial'; font-size: 9pt; margin-top:-0.7em;">
+                              <span style="margin-right: 87px;"><i class="fa-solid fa-calendar-days"></i> {{ site.data.course.office_hours.day }}</span>
+                              <span style="margin-right: 34px;"><i class="fa-solid fa-clock"></i> {{ site.data.course.office_hours.time }}</span>
+                              <span><i class="fa-solid fa-building"></i> {{ site.data.course.office_hours.location }}</span>
+                            </p>
+                            <p style="color: #0154a1; font-family: 'Arial'; font-size: 10pt;"><strong>Makerspace Hours</strong></p>
+                            <p style="color: #504f4f; font-family: 'Arial'; font-size: 9pt; margin-top:-0.7em;">
+                              <span style="margin-right: 17px;"><i class="fa-solid fa-calendar-days"></i> {{ site.data.course.makerspace_hours.days }}</span>
+                              <span style="margin-right: 21px;"><i class="fa-solid fa-clock"></i> {{ site.data.course.makerspace_hours.time }}</span>
+                              <span><i class="fa-solid fa-building"></i> {{ site.data.course.makerspace_hours.location }}</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="column width-12" style="font-family: 'Arial'; font-size: 10pt;">
+                          <p style="font-family: 'Arial'; font-size: 10pt;" class="mb-12" style="margin-top: 1rem;">
+                            <strong>Course description: </strong>{{ site.data.course.description }}
+                          </p>
+                          <img style="margin-top: 1em; width:1000px; height: 500px" src="snippets/class_pic.png" alt="Research agenda diagram" />
+                          <p style="margin-top: 1em;font-family: 'Arial'; font-size: 10pt; "><strong>Learning objectives:</strong> After this course, students will be able to:</p>
+                          <ul style="font-family: 'Arial'; font-size: 10pt;">
+                            {% for objective in site.data.course.learning_objectives %}
+                              <li>{{ objective }}</li>
+                            {% endfor %}
+                          </ul>
+                          <p style="font-family: 'Arial'; font-size: 10pt;"><strong>Structure:</strong> This course is structured as an upper-undergrad and graduate level hands-on course on design for human-robot interaction.</p>
+                          <ul style="font-family: 'Arial'; font-size: 10pt;">
+                            {% for item in site.data.course.structure %}
+                              <li>{{ item }}</li>
+                            {% endfor %}
+                          </ul>
+                          <p style="font-family: 'Arial'; font-size: 10pt;"><strong>Individual Project Rubric</strong>:</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                </div>
+                <div class="width-12">
+                  <div class="row">
+                    <div class="column width-2">
+                      <div class="thumbnail mb-20">
+                        <div
+                          style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                          <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                            <strong>STUDENTS</strong>
+                          </h5>
+                        </div>
+                        <div
+                          style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                          <p style="font-family: 'Arial'; font-size:8pt;"><strong>Undergraduates</strong><br />
+                            {% for student in site.data.students.undergraduates %}
+                            {{ student }}<br />
+                            {% endfor %}
+                          </p>
+                        </div>
+                        <div
+                          style="margin-top:1rem; display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                          <p style="font-family: 'Arial'; font-size:8pt;"><strong>Graduates</strong><br />
+                            {% for student in site.data.students.graduates %}
+                            {{ student }}<br />
+                            {% endfor %}
+                          </p>
+                        </div>
+                        <div class="talk-header"
+                          style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                          <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                            <strong>INVITED TALKS</strong>
+                          </h5>
+                        </div>
+                        {% for talk in site.data.talks %}
+                        <div class="talk"
+                          style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 20px;color: #333; margin-bottom: 10px;">
+                          <p><img src="{{ talk.image }}" style="width:90px; height:60px; object-fit: cover;" /></p>
+                          <p style="font-family: 'Arial'; font-size:6pt;">
+                            <strong><a href="{{ talk.link }}">{{ talk.name }}</a></strong><br />
+                            {{ talk.title }}<br />
+                            {{ talk.institution }}
+                          </p>
+                        </div>
+                        {% endfor %}
+                        <div class="talk-header"
+                          style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                          <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                            <strong>GROUP PROJECTS</strong>
+                          </h5>
+                        </div>
+                        {% for project in site.data.group_projects %}
+                        <div class="talk"
+                          style="display: flex; justify-content:left; column-gap: 15px;color: #333;margin-bottom: 10px;">
+                          <p><img src="{{ project.image }}" style="width:90px; height:60px; object-fit: contain;" /></p>
+                          <p style="font-family: 'Arial'; font-size:6pt;">
+                            <strong><a href="{{ project.link }}">{{ project.name }}</a></strong>
+                          </p>
+                        </div>
+                        {% endfor %}
+                      </div>
+                      </div> 
+                      <div class="column width-9 mt-10">
+                        <div class="row" style="font-family: 'Arial';text-align:justify;">
+                          <div class="column width-12">
+                            <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
+                              <h4 style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
+                                <strong>Class Lecture Summary</strong>
+                              </h4>
+                            </div>
+                            
+                            {% for lecture in site.data.lectures %}
+                              <div class="row" id="project{{ lecture.class }}" style="padding:1rem 0rem;">
+                                <div class="column width-5" onmouseover="PlayVideo({{ lecture.class }})" onmouseleave="StopVideoPlay({{ lecture.class }})">
+                                  <video loop muted playsinline id="video{{ lecture.class }}" poster="{{ lecture.video_poster }}"
+                                    style="width: 320px; height: 180px;margin-top: 0.7rem; object-fit: cover;">
+                                    <source type="video/mp4" src="{{ lecture.video_src }}" style="width: 300px; height: 220px; object-position: center;">
+                                  </video>
+                                </div>
+                                <div class="column width-7" style="padding-right: 1em;" id="magdisplay">
+                                  <h5 style="color: #2c98d3; font-weight: bold;">CLASS {{ lecture.class }}</h5>
+                                  <h5 style="font-weight: bold; margin-top: -1em; text-align: left;">{{ lecture.title }}</h5>
+                                  <h5 class="authors" style="text-align: left;">{{ lecture.description }}</h5>
+                                  <h5 style="font-weight: bold;">
+                                    <a href="{{ lecture.slides_link }}" target="_blank" style="border: none; color: #3b87c1;">&nbsp;SLIDES</a>
+                                  </h5>
+                                  {% if lecture.readings %}
+                                    <div style="margin-top:0.5em; background-color: #fef0b9; color:#333; padding-left:0.5em; padding-top: 0.2em; border: 1px #333 dashed; border-radius:5px;">
+                                      <h5 style="margin-bottom:0.3em;"><strong>Readings:</strong>
+                                        {% for reading in lecture.readings %}
+                                          <a href="{{ reading.link }}" target="_blank" style="border: none; color: #3b87c1;">&nbsp;{{ reading.title }}</a>{% if forloop.last == false %}, {% endif %}
+                                        {% endfor %}
+                                      </h5>
+                                    </div>
+                                  {% endif %}
+                                </div>
+                              </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                        <!-- </div>
+											</div>	 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- </section>
+			</div> -->
+  <!-- Content End -->
+  <!-- Footer -->
+  <footer class="footer" style="background-color:#fef0b9">
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="column width-12">
+          <div class="footer-bottom-inner center">
+            <p class="copyright pull-left clear-float-on-mobile">
+              &copy; Original website designed by <a href="https://www.lianghe.me/">Liang He</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  <!-- Full news list -->
+  <!-- 	</div>
+	</div> -->
+  <!-- Js -->
+  <script src="js/timber.master.min.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    // var modal1 = document.getElementById("myModal1");
+    // Get the button that opens the modal
+    var btn = document.getElementById("myFullListBtn");
+    // var btn1 = document.getElementById("myFullListTalkBtn");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    // var span1 = document.getElementsByClassName("close1")[0];
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    // btn1.onclick = function() {
+    //   modal1.style.display = "block";
+    // }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+    // span1.onclick = function() {
+    //   modal1.style.display = "none";
+    // }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+    }
+    function PlayVideo(num) {
+      var name = "video" + num;
+      var proj_name = "project" + num;
+      var v = document.getElementById(name);
+      var div = document.getElementById(proj_name);
+      div.style.backgroundColor = "#efefef";
+      div.style.transition = "background-color 0.7s";
+      v.autoplay = true;
+      v.load();
+    }
+    function StopVideoPlay(num) {
+      var name = "video" + num;
+      var proj_name = "project" + num;
+      var v = document.getElementById(name);
+      var div = document.getElementById(proj_name);
+      div.style.backgroundColor = "#fff";
+      div.style.transition = "background-color 0.7s";
+      v.autoplay = false;
+      v.load();
+    }
+    function PlayVideo_unpublished(num) {
+      var name = "video" + num;
+      var proj_name = "project" + num;
+      var v = document.getElementById(name);
+      var div = document.getElementById(proj_name);
+      div.style.backgroundColor = "#efefef";
+      div.style.transition = "background-color 0.7s";
+      var str = v.poster;
+      var dot_idx = str.lastIndexOf(".");
+      str = str.substring(0, dot_idx);
+      str = str + ".png";
+      v.poster = str;
+    }
+    function StopVideoPlay_unpublished(num) {
+      var name = "video" + num;
+      var proj_name = "project" + num;
+      var v = document.getElementById(name);
+      var div = document.getElementById(proj_name);
+      div.style.backgroundColor = "#fff";
+      div.style.transition = "background-color 0.7s";
+      var str = v.poster;
+      var dot_idx = str.lastIndexOf(".");
+      str = str.substring(0, dot_idx);
+      str = str + ".jpg";
+      v.poster = str;
+    }
+    function change(i) {
+      if (i == 1) {
+        var img = document.getElementById("profileimage");
+        img.src = "img/course_image_hri.jpeg";
+      } else {
+        var img = document.getElementById("profileimage");
+        img.src = "img/course_image_hri.jpeg";
+      }
+    }
+    function redirectPage() {
+      location.href = "creative_making_collection.html";
+    }
+  </script>
+</body>
+
+</html>
