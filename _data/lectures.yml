@@ -33,3 +33,40 @@
     - title: "Design is storytelling"
       link: "https://www.amazon.com/Design-Storytelling-Ellen-Lupton/dp/194230319X"
   # Add more lectures as needed...
+- class: 3
+  video_poster: "snippets/class_2.png"
+  video_src: "snippets/class_2.mp4"
+  title: "Lecture: UX Design Process"
+  description: "This class was about UX Design process and meeting Astro!"
+  slides_link: "https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34059805"
+  readings:
+    - title: "Laws of Simplicity"
+      link: "https://www.amazon.com/Laws-Simplicity-Design-Technology-Business/dp/0262134721"
+    - title: "Shikake"
+      link: "https://www.amazon.com/Shikake-Japanese-Shaping-Behavior-Through/dp/1631497812"
+    - title: "Sprint"
+      link: "https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/1442397683"
+    - title: "The Design Way"
+      link: "https://www.amazon.com/Design-Way-Intentional-Change-Unpredictable/dp/0262018179"
+    - title: "Design is storytelling"
+      link: "https://www.amazon.com/Design-Storytelling-Ellen-Lupton/dp/194230319X"
+  # Add more lectures as needed...
+
+- class: 2
+  video_poster: "snippets/class_2.png"
+  video_src: "snippets/class_2.mp4"
+  title: "Lecture: UX Design Process"
+  description: "This class was about UX Design process and meeting Astro!"
+  slides_link: "https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34059805"
+  readings:
+    - title: "Laws of Simplicity"
+      link: "https://www.amazon.com/Laws-Simplicity-Design-Technology-Business/dp/0262134721"
+    - title: "Shikake"
+      link: "https://www.amazon.com/Shikake-Japanese-Shaping-Behavior-Through/dp/1631497812"
+    - title: "Sprint"
+      link: "https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/1442397683"
+    - title: "The Design Way"
+      link: "https://www.amazon.com/Design-Way-Intentional-Change-Unpredictable/dp/0262018179"
+    - title: "Design is storytelling"
+      link: "https://www.amazon.com/Design-Storytelling-Ellen-Lupton/dp/194230319X"
+  # Add more lectures as needed...
