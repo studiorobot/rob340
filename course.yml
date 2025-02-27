@@ -1,35 +1,42 @@
-title: "Design For Human Robot Interaction"
-instructor_name: "Patricia Alves-Oliviera"
+title: "Human Evaluations of Robot Systems"
+instructor_name: "Patricia Alves-Oliveira"
 instructor_url: "https://patricialvesoliveira.com/"
-gsi_name: "Manohar Bhat"
-gsi_url: "https://manoharbhat.github.io/"
+# need to add a co-teacher here
+gsi_name: "Miranda Mittleman"
+gsi_url: "https://www.linkedin.com/in/miranda-mittleman-b049b11b4/"
+# need to add an IA here
 department: "Robotics Department"
 university: "University of Michigan Ann Arbor"
 office: "2252 FRB"
 semester: "Winter 2024"
 next_offering: "Spring 2025"
 lectures:
-  days: "Tuesday & Thursday"
-  time: "12:00 - 1:30 PM"
-  location: "G906 COOL"
+  days: "Monday & Wednesday"
+  time: "1:30 - 3:00 PM"
+  location: "GGBL 1025"
 office_hours:
-  day: "Tuesday"
-  time: "2:00 - 3:00 PM"
-  location: "2252 FMCRB"
-makerspace_hours:
-  days: "Thursday & Saturday"
+  day: "Wednesday"
   time: "10:30 - 11:30 AM"
-  location: "1141 FMCRB"
+  location: "4150 FMCRB"
+# makerspace_hours:
+#   days: "Thursday & Saturday"
+#   time: "10:30 - 11:30 AM"
+#   location: "1141 FMCRB"
+# not needed
 description: |
-  his advanced course covers fundamentals of Design for Human-Robot Interaction, leading to the creation of memorable relationships with robots. Topics include Frameworks for Robot Design; ideation strategies for robotics such as body-storming and speculation; participatory design with end-users and communities; creation of mock-ups and prototypes to test ideas; development of qualitative and quantitative key-performance indicators to measure the success of the robot; design for ethics, equality, and justice in robotics. We will create a vision for relationships between humans and robots that are inspiring, refined, and magical. This course will prepare you to be a full-stack interaction robot designer.
+  This course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include metrics and analysis for human studies of robots, measuring human performance in the context of robotic systems, and exploring how robot behaviors such as gaze, movement, etc, are perceived by humans. By the end of this class, you will know the types of metrics, studies, and analyses you can conduct to understand the performance of a robot system informed by human feedback.
 learning_objectives:
-  - "Understand the role of design in the field of Human-Robot Interaction."
-  - "Integrate a variety of design methods for creating interactive robots."
-  - "Identify user needs and evaluate robot performance with users."
-  - "Document robot design, development, and fabrication work."
-  - "Acquire critical thinking about robot design practices to shape the future of HRI."
+  - "Evaluate Human-Robot Interaction Systems."
+  - "Learn to work in teams."
+  - "Critique studies in user Human-Robot Interaction."
+  - "Select the appropriate study method for a human-robot interaction study."
+  - "Recognize differences between formative and summative studies."
+  - "Reflect on the difference between system metrics and user metrics (when metrics collide)."
+  - "Create a research plan to evaluate robot systems"
+  - "Compare and contrast method in user studies"
+  - "Understand the connection between theory, design, implementation, and evaluation of a robot system"
 structure:
-  - "Interactive Lectures led by the Professor."
+  - "Interactive Lectures led by the professors."
   - "Guest Lectures from Experts in the field of design."
   - "Workshop Classes intended to be a time for working on projects."
   - "Guided Projects and receive feedback from the Professor and peers."
