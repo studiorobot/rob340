@@ -1,0 +1,21 @@
+
+- name: "Course Description"
+  content: |
+    This course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include metrics and analysis for human studies of robots, measuring human performance in the context of robotic systems, and exploring how robot behaviors such as gaze, movement, etc, are perceived by humans. By the end of this class, you will know the types of metrics, studies, and analyses you can conduct to understand the performance of a robot system informed by human feedback.
+- insert_class_pic: false  
+- name: "Learning Objectives"
+  content: |
+    - Evaluate Human-Robot Interaction Systems.
+    - Learn to work in teams.
+    - Critique studies in user Human-Robot Interaction.
+    - Select the appropriate study method for a human-robot interaction study.
+    - Recognize differences between formative and summative studies.
+    - Reflect on the difference between system metrics and user metrics (when metrics collide).
+    - Create a research plan to evaluate robot systems
+    - Compare and contrast method in user studies
+    - Understand the connection between theory, design, implementation, and evaluation of a robot system
+
+- name: "Group Project Rubric"
+  content: |
+    sentence.
+    - bullet point
