@@ -14,8 +14,19 @@
     - Create a research plan to evaluate robot systems
     - Compare and contrast method in user studies
     - Understand the connection between theory, design, implementation, and evaluation of a robot system
-
-- name: "Group Project Rubric"
+# add image here
+- name: "Group Project"
+  content: The group project is a hands-on research project whose research topic and protocol are defined by the students and culminates in a written report and an oral group presentation.
+    Students are expected to choose from the below puzzle piece to create a research study. 
+- name: "Puzzle Piece"
+  content: 
+    - img/gp_puzzle.png 
+- name: "Labs"
   content: |
-    sentence.
-    - bullet point
+    - Lab 1: 
+    - Lab 2: 
+    - Lab 3: 
+    - Lab 4: 
+    - Lab 5: 
+    - Lab 6:
+

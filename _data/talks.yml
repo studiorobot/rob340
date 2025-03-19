@@ -1,40 +1,35 @@
-- name: Sheena Erete
-  title: Community Research
-  institution: University of Maryland
-  link: https://scholar.google.com/citations?user=cTrfR60AAAAJ
-  image: img/talk_logos/umary.png
-- name: Elin Bjorling
-  title: Human-Centered Design
-  institution: University of Washington
-  link: https://scholar.google.com/citations?user=ARmXjpcAAAAJ
-  image: img/talk_logos/Washington.png
-- name: Anastasia Ostrowski
-  title: Design Justice
-  institution: Purdue University
-  link: https://scholar.google.com/citations?user=nnNYtkAAAAAJ
-  image: img/talk_logos/purdue.png
-- name: Sophia Brueckner
-  title: Speculative Design
-  institution: University of Michigan
-  link: https://scholar.google.com/citations?user=h2DHyBMAAAAJ
+- name: Sarah Sebo
+  title: Group Dynamics
+  institution: University of Chicago
+  link: https://scholar.google.com/citations?user=6gWYMigAAAAJ&hl=en
+  image: img/talk_logos/sebo.png
+- name: Mike Frost
+  title: Character Design
+  institution: Freelancer Sounds and HRI Designer
+  link: text
   image: img/talk_logos/umich.png
-- name: Kim Baraka
-  title: Embodied HRI
-  institution: Vrije Universiteit
-  link: https://scholar.google.com/citations?user=ajXxBjQAAAAJ
-  image: img/talk_logos/vu.png
-- name: Yuhan Hu
-  title: Soft Robotics
-  institution: Cornell University
-  link: https://scholar.google.com/citations?user=yoTbKKcAAAAJ
-  image: img/talk_logos/cornell.png
-- name: Kayla Matheus
-  title: HRI for Health
-  institution: Yale University
-  link: https://scholar.google.com/citations?user=roWQIeYAAAAJ
-  image: img/talk_logos/yale.png
-- name: Maria Luce Lupetti
-  title: Generative AI
-  institution: TU Delft
-  link: https://scholar.google.it/citations?user=7M1ldPsAAAAJ
-  image: img/talk_logos/TU Delft.png
+- name: Sindhu Kutty
+  title: Fairness & Bias in Machine Learning
+  institution: University of Michigan
+  link: https://scholar.google.com/citations?user=8duCIlcAAAAJ&hl=en
+  image: img/talk_logos/umich.png
+- name: Michal Luria
+  title: Policies in AI Agents
+  institution: Center for Democracy & Technology
+  link: https://scholar.google.com/citations?hl=en&user=bLShnf0AAAAJ&view_op=list_works&sortby=pubdate
+  image: img/talk_logos/michal.png
+- name: Hannah Pelikan
+  title: Conversational Analysis
+  institution: Linköping University
+  link: https://scholar.google.com/citations?user=7ud3OXMAAAAJ&hl=en
+  image: img/talk_logos/hannah.png
+- name: Mafalda Gamboa
+  title: Ethnography & autoethnography
+  institution: Chalmers University of Technology
+  link: https://scholar.google.fr/citations?user=KEn_O7kAAAAJ&hl=en
+  image: img/talk_logos/mafalda.png
+- name: Filipa Correia
+  title: Multi-agents evaluation 
+  institution: Interactive Technologies Institute
+  link: https://scholar.google.pt/citations?user=lEjl_5MAAAAJ&hl=en
+  image: img/talk_logos/fillipa.jpg

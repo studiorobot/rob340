@@ -1,52 +1,44 @@
 - class: 1
   video_poster: snippets/class_1.png
-  video_src: snippets/class_1.mp4
+  # video_src: snippets/class_1.mp4
   title: 'Lecture: Introduction for the Course'
-  description: This class was an introduction to Design for HRI
-  slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34003134
+  description: This class was an introduction to Human Evaluations of Robot Systems
+  slides_link: https://umich.instructure.com/courses/747985
   readings:
-    - title: The New Breed
-      link: https://www.amazon.com/New-Breed-History-Animals-Reveals/dp/1250296102
-    - title: Characterizing Social Robots
-      link: https://link.springer.com/chapter/10.1007/978-3-030-42307-0_2
-    - title: Design of Everyday Things
-      link: https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654
-    - title: Mindstorms
-      link: https://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746
-    - title: The Media Equations
-      link: https://www.amazon.com/Media-Equation-Computers-Television-Lecture/dp/1575860538
+    - title: GenAI
+      link: https://genai.umich.edu/
 - class: 2
   video_poster: snippets/class_2.png
-  video_src: snippets/class_2.mp4
-  title: 'Lecture: UX Design Process'
-  description: This class was about UX Design process and meeting Astro!
-  slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34059805
+  # video_src: snippets/class_2.mp4
+  title: 'Lecture: Evaluation Protocol'
+  description: This class was about _____
+  slides_link: https://umich.instructure.com/courses/747985
   readings:
-    - title: Laws of Simplicity
+    - title: A primer for conducting experiments in human-robot interaction
       link: https://www.amazon.com/Laws-Simplicity-Design-Technology-Business/dp/0262134721
-    - title: Shikake
-      link: https://www.amazon.com/Shikake-Japanese-Shaping-Behavior-Through/dp/1631497812
-    - title: Sprint
-      link: https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/1442397683
-    - title: The Design Way
-      link: https://www.amazon.com/Design-Way-Intentional-Change-Unpredictable/dp/0262018179
-    - title: Design is storytelling
-      link: https://www.amazon.com/Design-Storytelling-Ellen-Lupton/dp/194230319X
+    - title: Human-Robot Interaction; Chapter 10
+      link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf
 - class: 3
-  video_poster: snippets/class_2.png
-  video_src: snippets/class_2.mp4
-  title: 'Lecture: UX Design Process'
-  description: This class was about UX Design process and meeting Astro!
-  slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34059805
+  video_poster: snippets/class_3.png
+  # video_src: snippets/class_2.mp4
+  title: 'Lecture: Evaluation Protocol cont. & Emotions'
+  description: This class was about ____
+  slides_link: https://umich.instructure.com/courses/747985
   readings:
-    - title: Laws of Simplicity
-      link: https://www.amazon.com/Laws-Simplicity-Design-Technology-Business/dp/0262134721
-    - title: Shikake
-      link: https://www.amazon.com/Shikake-Japanese-Shaping-Behavior-Through/dp/1631497812
-    - title: Sprint
-      link: https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/1442397683
-    - title: The Design Way
-      link: https://www.amazon.com/Design-Way-Intentional-Change-Unpredictable/dp/0262018179
-    - title: Design is storytelling
-      link: https://www.amazon.com/Design-Storytelling-Ellen-Lupton/dp/194230319X
+    - title: Switching off a robot
+      link: https://www.researchgate.net/publication/221473221_Daisy_Daisy_give_me_your_answer_do_Switching_off_a_robot
+    - title: Human-Robot Interaction; Chapter 9
+      link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf
+    - title: Toward sociable robots
+      link: https://www.sciencedirect.com/science/article/pii/S0921889002003731
+    - title: Robots with "soul"
+      link: https://www.youtube.com/watch?v=utV1sdjr4PY&ab_channel=TED
+# - class: 3
+#   video_poster: snippets/class_3.png
+#     - title: Sprint
+#       link: https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/1442397683
+#     - title: The Design Way
+#       link: https://www.amazon.com/Design-Way-Intentional-Change-Unpredictable/dp/0262018179
+#     - title: Design is storytelling
+#       link: https://www.amazon.com/Design-Storytelling-Ellen-Lupton/dp/194230319X
 
