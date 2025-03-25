@@ -19,14 +19,23 @@
   content: The group project is a hands-on research project whose research topic and protocol are defined by the students and culminates in a written report and an oral group presentation.
     Students are expected to choose from the below puzzle piece to create a research study. 
 - name: "Puzzle Piece"
-  content: 
-    - img/gp_puzzle.png 
+  image: true  # Image for this section
+  image_url: "img/gp_puzzle.png"  # Specify the image URL here
+
 - name: "Labs"
-  content: |
-    - Lab 1: 
-    - Lab 2: 
-    - Lab 3: 
-    - Lab 4: 
-    - Lab 5: 
-    - Lab 6:
+  labs:
+    - image_url: "img/talk_logos/sebo.png"
+      link: "https://example.com/lab1"
+      title: "Intro to Labs"
+      description: "This lab covers the basics of lab work and safety."
+      
+    - image_url: "path/to/image2.jpg"
+      link: "https://example.com/lab2"
+      title: "Advanced Techniques"
+      description: "Learn advanced lab techniques and methods."
+
+    - image_url: "path/to/image3.jpg"
+      link: "https://example.com/lab3"
+      title: "Experiment Analysis"
+      description: "Analyze experiments and interpret results."
 
