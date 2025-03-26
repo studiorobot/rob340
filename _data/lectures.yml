@@ -1,6 +1,6 @@
 - class: 1
   video_poster: snippets/class_1.png
-  # video_src: snippets/class_1.mp4
+  video_src: snippets/class_1.mp4
   title: 'Lecture: Introduction for the Course'
   description: This class was an introduction to Human Evaluations of Robot Systems
   slides_link: https://umich.instructure.com/courses/747985
@@ -9,9 +9,9 @@
       link: https://genai.umich.edu/
 - class: 2
   video_poster: snippets/class_2.png
-  # video_src: snippets/class_2.mp4
+  video_src: snippets/class_2.mp4
   title: 'Lecture: Evaluation Protocol'
-  description: This class was about _____
+  description: Evaluation protocol for experimental studies in human-robot interaction (part 1).
   slides_link: https://umich.instructure.com/courses/747985
   readings:
     - title: A primer for conducting experiments in human-robot interaction
@@ -20,9 +20,9 @@
       link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf
 - class: 3
   video_poster: snippets/class_3.png
-  # video_src: snippets/class_2.mp4
+  video_src: snippets/class_3.mp4
   title: 'Lecture: Evaluation Protocol cont. & Emotions'
-  description: This class was about ____
+  description: Evaluation protocol for experimental studies in human-robot interaction (part 2).
   slides_link: https://umich.instructure.com/courses/747985
   readings:
     - title: Switching off a robot
@@ -33,12 +33,50 @@
       link: https://www.sciencedirect.com/science/article/pii/S0921889002003731
     - title: Robots with "soul"
       link: https://www.youtube.com/watch?v=utV1sdjr4PY&ab_channel=TED
-# - class: 3
-#   video_poster: snippets/class_3.png
-#     - title: Sprint
-#       link: https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/1442397683
-#     - title: The Design Way
-#       link: https://www.amazon.com/Design-Way-Intentional-Change-Unpredictable/dp/0262018179
-#     - title: Design is storytelling
-#       link: https://www.amazon.com/Design-Storytelling-Ellen-Lupton/dp/194230319X
+- class: 4
+  video_poster: snippets/class_4.png
+  video_src: snippets/class_4.mp4
+  title: 'Lecture: Non-verbal behaviors'
+  description: The role of non-verbal behaviors, such as gaze, in human-robot interaction.
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39346951
+  readings:
+    - title: Conversational gaze aversion for humanlike robots
+      link: https://dl.acm.org/doi/10.1145/2559636.2559666
+    - title: 'Theory: Gaze behaviors'
+      link: 
+- class: 5
+  video_poster: snippets/class_5.png
+  video_src: snippets/class_5.mp4
+  title: 'Lecture: Emotions'
+  description: History of the study of emotions and their role during interactions with robots.
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39436924
+  readings:
+    - title: 'Micbot'
+      link: https://dl.acm.org/doi/10.5555/3378680.3378701
+    - title: 'Robots in Groups and Teams'
+      link: https://dl.acm.org/doi/abs/10.1145/3415247
+    - title: 'A Robotic Companion for Psychological Well-being'
+      link: https://dl.acm.org/doi/abs/10.1145/3568162.3578625
+    - title: A Carryover Effect in HRI
+      link: https://dl.acm.org/doi/abs/10.5555/3523760.3523807
+- class: 6
+  video_poster: snippets/class_6.png
+  video_src: snippets/class_6.mp4
+  title: 'Lecture: Wizard of Oz & Peripheral interactions'
+  description: Exploring the creation of alternative interactions with robots.
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39476178
+  readings:
+    - title: Dieter Rams
+      link: https://readymag.com/webspecials/dieter-rams/
+    # - title: 
+    #   link: https://www.dailymotion.com/video/x8qkd23
+- class: 7
+  video_poster: snippets/class_7.png
+  video_src: snippets/class_7.mp4
+  title: 'Lecture: Verbal interactions'
+  description: The role of verbal interactions, inclusing trust, self-disclosure, and components of speech towards robots.
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
+  readings:
+    - title: 
+      link: 
 
