@@ -42,8 +42,6 @@
   readings:
     - title: Conversational gaze aversion for humanlike robots
       link: https://dl.acm.org/doi/10.1145/2559636.2559666
-    - title: 'Theory: Gaze behaviors'
-      link: 
 - class: 5
   video_poster: snippets/class_5.png
   video_src: snippets/class_5.mp4
