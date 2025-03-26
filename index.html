@@ -306,7 +306,7 @@ title: Class Schedule
                           {% for lecture in site.data.lectures %}
                             <div class="row" id="project{{ lecture.class }}" style="padding:1rem 0rem;">
                               <div class="column width-5" onmouseover="PlayVideo({{ lecture.class }})" onmouseleave="StopVideoPlay({{ lecture.class }})">
-                                <video loop muted playsinline id="video{{ lecture.class }}" poster="{{ lecture.video_poster }}"
+                                <video loop muted preload="auto" playsinline id="video{{ lecture.class }}" poster="{{ lecture.video_poster }}"
                                   style="width: 320px; height: 180px;margin-top: 0.7rem; object-fit: cover;">
                                   <source type="video/mp4" src="{{ lecture.video_src }}" style="width: 300px; height: 220px; object-position: center;">
                                 </video>
