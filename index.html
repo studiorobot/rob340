@@ -180,8 +180,7 @@ title: Class Schedule
 
                           {% for section in site.data.main %}
                           {% if section.name %}
-                            {% if section.name != "Labs" %}
-                           
+
                               <h5 style="margin-bottom: 5px; margin-top: 10px;">
                                 <strong>{{ section.name }}:</strong>
                               </h5>
@@ -191,34 +190,32 @@ title: Class Schedule
                               </div>
                               
                             {% endif %}
-                            {% endif %}
-                            
+                        
                             {% if section.image == true %}
                               <img style="margin-top: 1em; margin-bottom: 1em;" src="{{ section.image_url }}" />
                             {% endif %}
                           
                           {% endfor %}
 
+                            {% if site.data.labs %}
                           <div class="lab-container">
-                            {% for section in site.data.main %}
-                              {% if section.name == "Labs" %}
+              
                                 <h5 style="margin-bottom: 10px; margin-top: 10px;">
-                                  <strong>{{ section.name }}:</strong>
+                                  <strong>Labs:</strong>
                                 </h5>
                                 <div class="lab-grid">
-                                  {% for lab in section.labs %}
+                                  {% for lab in site.data.labs %}
                                     <div class="lab-item">
                                       <img class="lab-image" src="{{ lab.image_url }}" alt="Lab {{ forloop.index }}" />
                                       <div class="lab-info">
-                                        <a class="lab-link" href="{{ lab.link }}" target="_blank"><strong>Lab {{ forloop.index }}:</strong> {{ lab.title }}</a>
+                                    {% if lab.link %}   <a class="lab-link" href="{{ lab.link }}" target="_blank"> {% endif %} <strong>Lab {{ forloop.index }}:</strong> {{ lab.title }}{% if lab.link %} </a> {% endif %} 
                                         <p class="lab-description">{{ lab.description }}</p>
                                       </div>
                                     </div>
                                   {% endfor %}
                                 </div>
-                              {% endif %}
-                            {% endfor %}
                           </div>
+                          {% endif %}
                           <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
                             <h4 style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
                               <strong>Class Lecture Summary</strong>

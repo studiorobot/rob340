@@ -22,20 +22,4 @@
   image: true  # Image for this section
   image_url: "img/gp_puzzle.png"  # Specify the image URL here
 
-- name: "Labs"
-  labs:
-    - image_url: "img/talk_logos/sebo.png"
-      link: "https://example.com/lab1"
-      title: "Intro to Labs"
-      description: "This lab covers the basics of lab work and safety."
-      
-    - image_url: "path/to/image2.jpg"
-      link: "https://example.com/lab2"
-      title: "Advanced Techniques"
-      description: "Learn advanced lab techniques and methods."
-
-    - image_url: "path/to/image3.jpg"
-      link: "https://example.com/lab3"
-      title: "Experiment Analysis"
-      description: "Analyze experiments and interpret results."
 
