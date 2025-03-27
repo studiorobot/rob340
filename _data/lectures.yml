@@ -77,4 +77,22 @@
   readings:
     - title: 
       link: 
+- class: 8
+  video_poster: snippets/class_7.png
+  video_src: snippets/class_7.mp4
+  title: 'Guest Lecture: Sarah Sebo'
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
+  readings:
+    - title: Sebo website
+      link: https://sarahsebo.com/teaching.html
+- class: 9
+  video_poster: snippets/class_7.png
+  video_src: snippets/class_7.mp4
+  title: 'Guest Lecture: Sarah Sebo'
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
+  readings:
+    - title: Sebo website
+      link: https://sarahsebo.com/teaching.html
 

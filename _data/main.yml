@@ -17,7 +17,8 @@
 # add image here
 - name: "Group Project"
   content: The group project is a hands-on research project whose research topic and protocol are defined by the students and culminates in a written report and an oral group presentation.
-    Students are expected to choose from the below puzzle piece to create a research study. 
+    Students are expected to choose from the below puzzle piece to create a research study. Students submit a 5-6 page report and give an oral presentation
+    covering their project at the end of the term. 
 - name: "Puzzle Piece"
   image: true  # Image for this section
   image_url: "img/gp_puzzle.png"  # Specify the image URL here
