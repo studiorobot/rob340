@@ -36,8 +36,7 @@ title: Class Schedule
         <section class="section-block feature-3">
           <div class="feature-content">
             <div class="feature-content-inner left pt-30">
-              <div class="row">
-                <div class="width-12">
+       
                   <div class="row">
                     <div class="column width-2">
                       <div class="thumbnail mb-0">
@@ -138,45 +137,43 @@ title: Class Schedule
                           </p>
                         </div>
                         {% endif %}
-                        <div class="talk-header"
-                        style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                        <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
-                          <strong>INVITED TALKS</strong>
-                        </h5>
-                      </div>
-                      
-                      {% for talk in site.data.talks %}
-                      <div class="talk"
-                        style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 20px; color: #333; margin-bottom: 10px;">
+                        <div class="talk-header" style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                          <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                            <strong>INVITED TALKS</strong>
+                          </h5>
+                        </div>
                         
-                        <!-- Image -->
-                        <p>
-                          <img src="{{ talk.image }}" style="max-width: 100px; height: auto; object-fit: cover;" />
-                        </p>
+                        {% for talk in site.data.talks %}
+                          <div class="talk" style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 20px; color: #333; margin-bottom: 10px;">
+                            <!-- Image -->
+                            <p>
+                              <img src="{{ talk.image }}" style="max-width: 100px; height: auto; object-fit: cover;" />
+                            </p>
+                            
+                            <!-- Talk Information -->
+                            <p style="font-family: 'Arial'; font-size: 6pt;">
+                              <strong><a href="{{ talk.link }}">{{ talk.name }}</a></strong><br />
+                              {{ talk.title }}<br />
+                              {{ talk.institution }}
+                            </p>
+                          </div>
+                        {% endfor %}
                         
-                        <!-- Talk Information -->
-                        <p style="font-family: 'Arial'; font-size: 6pt;">
-                          <strong><a href="{{ talk.link }}">{{ talk.name }}</a></strong><br />
-                          {{ talk.title }}<br />
-                          {{ talk.institution }}
-                        </p>
-                      </div>
-                      {% endfor %}
-                      
-                        <div class="talk-header"
-                          style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                        <div class="talk-header" style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
                           <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
                             <strong>GROUP PROJECTS</strong>
                           </h5>
                         </div>
+                        
                         {% for project in site.data.group_projects %}
-                        <div class="talk" style="display: flex; justify-content:left; column-gap: 15px;color: #333;margin-bottom: 10px;">
-                          <p><img src="{{ project.image }}"  /></p>
-                          <p style="font-family: 'Arial'; font-size:6pt;">
-                            <strong><a href="{{ project.link }}">{{ project.name }}</a></strong>
-                          </p>
-                        </div>
+                          <div class="talk" style="display: flex; justify-content:left; column-gap: 15px;color: #333;margin-bottom: 10px;">
+                            <p><img src="{{ project.image }}" /></p>
+                            <p style="font-family: 'Arial'; font-size:6pt;">
+                              <strong><a href="{{ project.link }}">{{ project.name }}</a></strong>
+                            </p>
+                          </div>
                         {% endfor %}
+                        
                       </div>
                     </div>
                     <div class="column width-9">
@@ -322,16 +319,7 @@ title: Class Schedule
                       </div>
                     </div>
       
-                  </div>
-                </div>
-                <div class="width-12">
-                  <div class="row">
-                    <div class="column width-2">
-
-                      </div> 
-                    
-                    </div>
-                  </div>
+       
                 </div>
               </div>
             </div>
@@ -515,6 +503,72 @@ title: Class Schedule
       location.href = "creative_making_collection.html";
     }
   </script>
+  <style>
+    /* Tablet and Mobile Views */
+@media (max-width: 1140px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column.width-5,
+  .column.width-7 {
+    width: 100%;
+  }
+
+  .column.width-7 {
+    margin-top: 1em; /* Add some space between the video and the content */
+  }
+
+  #magdisplay {
+    margin-top: 1rem;
+  }
+}
+/* Tablet and smaller screens */
+@media (min-width:769px) and (max-width: 1140px) {
+  
+  /* Invited Talks Section */
+  .talk {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content */
+    margin-bottom: 1rem; /* Space between each talk */
+  }
+
+  .talk img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.5rem; /* Space between the image and the text */
+  }
+
+  .talk p {
+    font-size: 10pt; /* Adjust font size for better readability */
+    margin-top: 0.5rem; /* Add space between text and image */
+    text-align: center; /* Center the text */
+  }
+
+  /* Group Projects Section */
+  .talk {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content */
+    margin-bottom: 1rem; /* Space between each project */
+  }
+
+  .talk img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.5rem; /* Space between the image and the text */
+  }
+
+  .talk p {
+    font-size: 10pt; /* Adjust font size for better readability */
+    margin-top: 0.5rem; /* Add space between text and image */
+    text-align: center; /* Center the text */
+  }
+}
+
+
+  </style>
 </body>
 
 </html>
