@@ -86,6 +86,7 @@
   readings:
     - title: Sebo website
       link: https://sarahsebo.com/teaching.html
+
 - class: 9
   video_poster: snippets/class_9.png
   video_src: snippets/class_7.mp4
@@ -95,6 +96,7 @@
   readings:
     - title: Forst website
       link: https://www.mikeforstmusic.com/
+
 - class: 10
   video_poster: snippets/class_10.png
   video_src: snippets/class_7.mp4
@@ -104,6 +106,7 @@
   readings:
     - title: Forst website
       link: https://www.mikeforstmusic.com/
+
 - class: 11
   video_poster: snippets/class_11.png
   video_src: snippets/class_7.mp4
@@ -117,3 +120,5 @@
       link: https://link.springer.com/chapter/10.1007/978-3-540-74853-3_9
     - title: Reproducibility and Replicability
       link: https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
+    - title: failure to replicate
+      link: https://pubmed.ncbi.nlm.nih.gov/26348332/
