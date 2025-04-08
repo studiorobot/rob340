@@ -86,7 +86,6 @@
   readings:
     - title: Sebo website
       link: https://sarahsebo.com/teaching.html
-
 - class: 9
   video_poster: snippets/class_9.png
   video_src: snippets/class_7.mp4
@@ -96,7 +95,6 @@
   readings:
     - title: Forst website
       link: https://www.mikeforstmusic.com/
-
 - class: 10
   video_poster: snippets/class_10.png
   video_src: snippets/class_7.mp4
@@ -106,7 +104,6 @@
   readings:
     - title: Forst website
       link: https://www.mikeforstmusic.com/
-
 - class: 11
   video_poster: snippets/class_11.png
   video_src: snippets/class_7.mp4
