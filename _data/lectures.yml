@@ -87,12 +87,33 @@
     - title: Sebo website
       link: https://sarahsebo.com/teaching.html
 - class: 9
-  video_poster: snippets/class_7.png
+  video_poster: snippets/class_9.png
   video_src: snippets/class_7.mp4
-  title: 'Guest Lecture: Sarah Sebo'
+  title: 'Guest Lecture: Mike Forst'
   description: text
-  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
+  slides_link: 
   readings:
-    - title: Sebo website
-      link: https://sarahsebo.com/teaching.html
-
+    - title: Forst website
+      link: https://www.mikeforstmusic.com/
+- class: 10
+  video_poster: snippets/class_10.png
+  video_src: snippets/class_7.mp4
+  title: 'Ethics in HRI'
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39800608
+  readings:
+    - title: Forst website
+      link: https://www.mikeforstmusic.com/
+- class: 11
+  video_poster: snippets/class_11.png
+  video_src: snippets/class_7.mp4
+  title: 'Types of Studies'
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39852275
+  readings:
+    - title: HitchBOT
+      link: https://direct.mit.edu/leon/article-abstract/50/1/77/46258/The-Death-and-Lives-of-hitchBOT-The-Design-and?redirectedFrom=fulltext
+    - title: “My Roomba Is Rambo”
+      link: https://link.springer.com/chapter/10.1007/978-3-540-74853-3_9
+    - title: Reproducibility and Replicability
+      link: https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
