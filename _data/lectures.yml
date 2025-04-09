@@ -98,7 +98,7 @@
 - class: 10
   video_poster: snippets/class_10.png
   video_src: snippets/class_7.mp4
-  title: 'Ethics in HRI'
+  title: 'Lecture: Ethics in HRI'
   description: text
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39800608
   readings:
@@ -107,7 +107,7 @@
 - class: 11
   video_poster: snippets/class_11.png
   video_src: snippets/class_7.mp4
-  title: 'Types of Studies'
+  title: 'Lecture: Types of Studies'
   description: text
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39852275
   readings:
@@ -173,7 +173,7 @@
 - class: 17
   video_poster: snippets/class_17.png
   video_src: snippets/class_7.mp4
-  title: Case Studies & Behavioral Analysis
+  title: 'Lecture: Case Studies & Behavioral Analysis'
   description: text
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40273667
   readings:
@@ -196,7 +196,7 @@
 - class: 20
   video_poster: snippets/class_20.png
   video_src: snippets/class_7.mp4
-  title: Crowdsourcing data in Machine Learning
+  title: 'Lecture: Crowdsourcing data in Machine Learning'
   description: text
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40456233
   readings:
@@ -207,7 +207,7 @@
 - class: 21
   video_poster: snippets/class_21.png
   video_src: snippets/class_7.mp4
-  title: Collaboration and Learning
+  title: 'Lecture: Collaboration and Learning'
   description: text
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40522922
   readings:
@@ -215,7 +215,7 @@
 - class: 22
   video_poster: snippets/class_22.png
   video_src: snippets/class_7.mp4
-  title: Mixed methods studies
+  title: 'Lecture: Mixed methods studies'
   description: text
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40586493
   readings:
