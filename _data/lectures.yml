@@ -84,7 +84,7 @@
   description: text
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
   readings:
-    - title: Sebo website
+    - title: Sarah's website
       link: https://sarahsebo.com/teaching.html
 - class: 9
   video_poster: snippets/class_9.png
@@ -93,7 +93,7 @@
   description: text
   slides_link: 
   readings:
-    - title: Forst website
+    - title: Mike's website
       link: https://www.mikeforstmusic.com/
 - class: 10
   video_poster: snippets/class_10.png
@@ -119,3 +119,110 @@
       link: https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
     - title: failure to replicate
       link: https://pubmed.ncbi.nlm.nih.gov/26348332/
+- class: 12
+  video_poster: snippets/class_12.png
+  video_src: snippets/class_7.mp4
+  title: 'Guest Lecture: Sindhu Kutty'
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40067892
+  readings:
+    - title: Datasheets for Datasets
+      link: https://arxiv.org/abs/1803.09010
+- class: 13
+  video_poster: snippets/class_13.png
+  video_src: snippets/class_7.mp4
+  title: 'Guest Lecture: Michal Luria'
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40116615
+  readings:
+    - title: Michal's google scholar 
+      link: https://scholar.google.com/citations?user=bLShnf0AAAAJ&hl=en
+- class: 14
+  video_poster: snippets/class_14.png
+  video_src: snippets/class_7.mp4
+  title: 'Guest Lecture: Hannah Pelikan'
+  description: text
+  slides_link: 
+  readings:
+    - title: Hannah's Website
+      link: https://hannahpelikan.com/
+- class: 15
+  video_poster: snippets/class_15.png
+  video_src: snippets/class_7.mp4
+  title: 'Guest Lecture: Mafalda Gamboa'
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40210097
+  readings:
+    - title: Doing Sensory Ethnography
+      link: https://methods.sagepub.com/book/mono/doing-sensory-ethnography-2e/toc 
+    - title: Design Ethnography
+      link: https://research.monash.edu/en/publications/design-ethnography-research-responsibilities-and-futures
+    - title: Living with Drones, Robots, and Young Children
+      link: https://dl.acm.org/doi/10.1145/3546155.3546658
+    - title: Implications for design
+      link: https://dl.acm.org/doi/10.1145/1124772.1124855
+- class: 16
+  video_poster: snippets/class_16.png
+  video_src: snippets/class_7.mp4
+  title: 'Guest Lecture: Filipa Correia'
+  description: text
+  slides_link: 
+  readings:
+    - title: Filipa's Website
+      link: https://iti.larsys.pt/member/filipa-correia/
+- class: 17
+  video_poster: snippets/class_17.png
+  video_src: snippets/class_7.mp4
+  title: Case Studies & Behavioral Analysis
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40273667
+  readings:
+    - title: Ch 10 HRI
+      link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf 
+    - title: social engagement in interaction with Nao
+      link: https://www.researchgate.net/publication/263382778_Children_with_autism_social_engagement_in_interaction_with_Nao_an_imitative_robot_-_A_series_of_single_case_experiments 
+    - title: SOCIAL ROBOT PROBO
+      link: https://www.worldscientific.com/doi/abs/10.1142/S0219843613500254?srsltid=AfmBOorv5OzxWjdv_hGPDoyxJTJXdpxKiLsx2LxyK6EvpJUHAN8GpKta
+- class: 18
+  video_poster: snippets/class_18.png
+  video_src: snippets/class_7.mp4
+  title: Group Project Feedback
+  description: text
+- class: 19
+  video_poster: snippets/class_18.png
+  video_src: snippets/class_7.mp4
+  title: Group Project Feedback
+  description: text
+- class: 20
+  video_poster: snippets/class_20.png
+  video_src: snippets/class_7.mp4
+  title: Crowdsourcing data in Machine Learning
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40456233
+  readings:
+    - title: Winding Through
+      link: https://doi.org/10.1109/LRA.2022.3223024
+    - title: "No, to the Right"
+      link: https://doi.org/10.1145/3568162.3578623
+- class: 21
+  video_poster: snippets/class_21.png
+  video_src: snippets/class_7.mp4
+  title: Collaboration and Learning
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40522922
+  readings:
+    - title: 
+- class: 22
+  video_poster: snippets/class_22.png
+  video_src: snippets/class_7.mp4
+  title: Mixed methods studies
+  description: text
+  slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40586493
+  readings:
+    - title: Best practices for mixed methods research in the health sciences
+      link: https://implementationscience-gacd.org/wp-content/uploads/2020/11/Best-Practices-for-Mixed-Methods-Research-in-the-Health-Sciences-2018-01-25-1.pdf
+    - title: Effect of Adolescent to Robot Stress Disclosure
+      link: https://dl.acm.org/doi/10.1007/978-3-030-62056-1_50
+    - title: Acceptance of an assistive robot in older adults
+      link: https://pubmed.ncbi.nlm.nih.gov/24855349/
+  
