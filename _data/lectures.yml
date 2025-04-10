@@ -79,36 +79,36 @@
       link: 
 - class: 8
   video_poster: snippets/class_8.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Guest Lecture: Sarah Sebo'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
   readings:
     - title: Sarah's website
       link: https://sarahsebo.com/teaching.html
 - class: 9
   video_poster: snippets/class_9.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Guest Lecture: Mike Forst'
-  description: text
+  description:
   slides_link: 
   readings:
     - title: Mike's website
       link: https://www.mikeforstmusic.com/
 - class: 10
   video_poster: snippets/class_10.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Lecture: Ethics in HRI'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39800608
   readings:
     - title: 
       link:
 - class: 11
   video_poster: snippets/class_11.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Lecture: Types of Studies'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39852275
   readings:
     - title: HitchBOT
@@ -121,36 +121,36 @@
       link: https://pubmed.ncbi.nlm.nih.gov/26348332/
 - class: 12
   video_poster: snippets/class_12.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Guest Lecture: Sindhu Kutty'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40067892
   readings:
     - title: Datasheets for Datasets
       link: https://arxiv.org/abs/1803.09010
 - class: 13
   video_poster: snippets/class_13.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Guest Lecture: Michal Luria'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40116615
   readings:
     - title: Michal's google scholar 
       link: https://scholar.google.com/citations?user=bLShnf0AAAAJ&hl=en
 - class: 14
   video_poster: snippets/class_14.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Guest Lecture: Hannah Pelikan'
-  description: text
+  description:
   slides_link: 
   readings:
     - title: Hannah's Website
       link: https://hannahpelikan.com/
 - class: 15
   video_poster: snippets/class_15.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Guest Lecture: Mafalda Gamboa'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40210097
   readings:
     - title: Doing Sensory Ethnography
@@ -163,18 +163,18 @@
       link: https://dl.acm.org/doi/10.1145/1124772.1124855
 - class: 16
   video_poster: snippets/class_16.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Guest Lecture: Filipa Correia'
-  description: text
+  description:
   slides_link: 
   readings:
     - title: Filipa's Website
       link: https://iti.larsys.pt/member/filipa-correia/
 - class: 17
   video_poster: snippets/class_17.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Lecture: Case Studies & Behavioral Analysis'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40273667
   readings:
     - title: Ch 10 HRI
@@ -185,19 +185,19 @@
       link: https://www.worldscientific.com/doi/abs/10.1142/S0219843613500254?srsltid=AfmBOorv5OzxWjdv_hGPDoyxJTJXdpxKiLsx2LxyK6EvpJUHAN8GpKta
 - class: 18
   video_poster: snippets/class_18.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: Group Project Feedback
-  description: text
+  description:
 - class: 19
   video_poster: snippets/class_18.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: Group Project Feedback
-  description: text
+  description:
 - class: 20
   video_poster: snippets/class_20.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Lecture: Crowdsourcing data in Machine Learning'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40456233
   readings:
     - title: Winding Through
@@ -206,17 +206,17 @@
       link: https://doi.org/10.1145/3568162.3578623
 - class: 21
   video_poster: snippets/class_21.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Lecture: Collaboration and Learning'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40522922
   readings:
     - title: 
 - class: 22
   video_poster: snippets/class_22.png
-  video_src: snippets/class_7.mp4
+  video_src:
   title: 'Lecture: Mixed methods studies'
-  description: text
+  description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40586493
   readings:
     - title: Best practices for mixed methods research in the health sciences

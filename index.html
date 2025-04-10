@@ -305,6 +305,7 @@ title: Class Schedule
                                   <a href="{{ lecture.slides_link }}" target="_blank" style="border: none; color: #3b87c1;">&nbsp;SLIDES</a>
                                 </h5>
                                 {% if lecture.readings %}
+                                {% if lecture.readings[0].title %}
                                   <div style="margin-top:0.5em; background-color: #fef0b9; color:#333; padding-left:0.5em; padding-top: 0.2em; border: 1px #333 dashed; border-radius:5px;">
                                     <h5 style="margin-bottom:0.3em;"><strong>Readings:</strong>
                                       {% for reading in lecture.readings %}
@@ -312,6 +313,7 @@ title: Class Schedule
                                       {% endfor %}
                                     </h5>
                                   </div>
+                                  {% endif %}
                                 {% endif %}
                               </div>
                             </div>
