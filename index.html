@@ -49,7 +49,7 @@ title: Class Schedule
                                 <a href="{{ link }}" target="_blank" style="text-decoration: none; border: none;">
                                   {% if link contains "mailto" %}
                                     <i class="fas fa-envelope" style="font-size: 16px; color: #000000;"></i>
-                                  {% elsif link contains "twitter" %}
+                                  {% elsif link contains "x.com" %}
                                     <i class="fab fa-twitter" style="font-size: 16px; color: #000000;"></i>
                                   {% elsif link contains "linkedin" %}
                                     <i class="fab fa-linkedin" style="font-size: 16px; color: #000000;"></i>
@@ -179,10 +179,10 @@ title: Class Schedule
                     <div class="column width-9">
                       <div class="row" style="text-align:justify;">
                         <div class="column width-6">
-                          <h5 style="margin-top:-1rem; margin-top:0.5rem;color: #FFCB05 ; font-family: 'Arial';font-size: 14pt;">
+                          <h5 style="margin-top:-1rem; margin-top:0.5rem;color: black; font-family: 'Arial';font-size: 14pt;">
                             <strong>{{ course.title }}</strong>
                           </h5>
-                          <h5 style="color: #0154a1; margin-top:-1.5rem;font-family: 'Arial';font-size: 12pt;">
+                          <h5 style="color: #27317E; margin-top:-1.5rem;font-family: 'Arial';font-size: 12pt;">
 
                             {% assign instructors = course.instructors %}
                             {% if instructors.size > 1 %}
@@ -223,15 +223,15 @@ title: Class Schedule
                           </h5>
                         </div>
                         <div class="column width-6" style="text-align:left;">
-                          <div style="padding: 0.5em 1em; border: 2px dashed #0154a1; background-color: #fef0b9; border-radius: 5px; margin-top: 0em; margin-bottom: 1.5rem;">
+                          <div style="padding: 0.5em 1em; border: 2px dashed #27317E; background-color: lightskyblue; border-radius: 5px; margin-top: 0em; margin-bottom: 1.5rem;">
                             
-                            <p style="color: #504f4f; font-family: 'Arial'; font-size: 9pt; margin-top: -0.7em;">
+                            <p style="color: black; font-family: 'Arial'; font-size: 9pt;">
                               {{ course.yellow_box.top-text }}
                             </p>
                         
                             {% for section in course.yellow_box.sections %}
-                              <p style="color: #0154a1; font-family: 'Arial'; font-size: 10pt;"><strong>{{ section.title }}</strong></p>
-                              <p style="color: #504f4f; font-family: 'Arial'; font-size: 9pt; margin-top: -0.7em;">
+                              <p style="color: #27317E; font-family: 'Arial'; font-size: 10pt;"><strong>{{ section.title }}</strong></p>
+                              <p style="color: black; font-family: 'Arial'; font-size: 9pt; margin-top: -0.7em;">
                                 <span style="margin-right: 20px;"><i class="fa-solid fa-calendar-days"></i> {{ section.date }}</span>
                                 <span style="margin-right: 28px;"><i class="fa-solid fa-clock"></i> {{ section.time }}</span>
                                 <span><i class="fa-solid fa-building"></i> {{ section.location }}</span>
@@ -306,10 +306,10 @@ title: Class Schedule
                                 </h5>
                                 {% if lecture.readings %}
                                 {% if lecture.readings[0].title %}
-                                  <div style="margin-top:0.5em; background-color: #fef0b9; color:#333; padding-left:0.5em; padding-top: 0.2em; border: 1px #333 dashed; border-radius:5px;">
+                                  <div style="margin-top:0.5em; background-color: lightskyblue; color:#333; padding-left:0.5em; padding-top: 0.2em; border: 1px #333 dashed; border-radius:5px;">
                                     <h5 style="margin-bottom:0.3em;"><strong>Readings:</strong>
                                       {% for reading in lecture.readings %}
-                                        <a href="{{ reading.link }}" target="_blank" style="border: none; color: #3b87c1;">&nbsp;{{ reading.title }}</a>{% if forloop.last == false %}, {% endif %}
+                                        <a href="{{ reading.link }}" target="_blank" style="border: none; color: navy;">&nbsp;{{ reading.title }}</a>{% if forloop.last == false %}, {% endif %}
                                       {% endfor %}
                                     </h5>
                                   </div>
@@ -333,13 +333,13 @@ title: Class Schedule
 			</div> -->
   <!-- Content End -->
   <!-- Footer -->
-  <footer class="footer" style="background-color:#fef0b9">
+  <footer class="footer" style="background-color:#27317E">
     <div class="footer-bottom">
       <div class="row">
         <div class="column width-12">
           <div class="footer-bottom-inner center">
-            <p class="copyright pull-left clear-float-on-mobile">
-              &copy; Website design adapted from <a href="https://www.lianghe.me/">Liang He</a>.
+            <p class="copyright pull-left clear-float-on-mobile" style="color:white;">
+              &copy; Website design adapted from <a href="https://www.lianghe.me/" style="color:white;">Liang He</a>.
             </p>
           </div>
         </div>
@@ -371,6 +371,20 @@ title: Class Schedule
       .lab-grid {
         grid-template-columns: repeat(1, 1fr);
       }
+
+      .row {
+    display: flex;
+    flex-direction: column; /* Stack the columns vertically */
+  }
+
+  .column.width-2,
+  .column.width-9 {
+    width: 100%; /* Make both columns take full width */
+  }
+
+  .column.width-9 {
+    order: -1; /* Move the 'width-9' column above 'width-2' */
+  }
     }
     
     .lab-item {
@@ -419,6 +433,7 @@ title: Class Schedule
     white-space: normal; /* Allows normal word wrapping */
     word-spacing: normal; /* Prevents excessive gaps */
   }
+  
   
   </style>
   
