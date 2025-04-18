@@ -372,6 +372,9 @@ title: Class Schedule
         grid-template-columns: repeat(1, 1fr);
       }
 
+      .profile-image{
+    width:20%;
+  }
       .row {
     display: flex;
     flex-direction: column; /* Stack the columns vertically */
@@ -434,6 +437,27 @@ title: Class Schedule
     word-spacing: normal; /* Prevents excessive gaps */
   }
   
+      /* Mobile View: 1 Column */
+      @media (max-width: 1024px) {
+   
+      .row {
+    display: flex;
+    flex-direction: column; /* Stack the columns vertically */
+  }
+  .profile-image{
+    width:20%;
+  }
+  .column.width-2,
+  .column.width-9 {
+    width: 100%; /* Make both columns take full width */
+  }
+
+  .column.width-9 {
+    order: -1; /* Move the 'width-9' column above 'width-2' */
+  }
+    }
+    
+
   
   </style>
   
