@@ -225,4 +225,27 @@
       link: https://dl.acm.org/doi/10.1007/978-3-030-62056-1_50
     - title: Acceptance of an assistive robot in older adults
       link: https://pubmed.ncbi.nlm.nih.gov/24855349/
+- class: 23
+  video_poster: snippets/class_23.png
+  video_src:
+  title: 'Guest Lecture: Yasmin Keats'
+  description:
+  slides_link: 
+  readings:
+    - title: Open Style Lab Website
+      link: https://www.openstylelab.org/
+- class: 24
+  video_poster: snippets/class_24.png
+  video_src:
+  title: 'Group Project Work'
+  description:
+- class: 25
+  video_poster: snippets/class_25.png
+  video_src:
+  title: 'Surveys & Statistics / Project Work'
+  description:
+  readings:
+    - title: Open Style Lab Website
+      link: https://www.openstylelab.org/
+
   
