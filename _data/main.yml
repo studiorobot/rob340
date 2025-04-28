@@ -2,7 +2,10 @@
 - name: "Course Description"
   content: |
     This course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include metrics and analysis for human studies of robots, measuring human performance in the context of robotic systems, and exploring how robot behaviors such as gaze, movement, etc, are perceived by humans. By the end of this class, you will know the types of metrics, studies, and analyses you can conduct to understand the performance of a robot system informed by human feedback.
-- insert_class_pic: false  
+- name: 
+  image: true  # Image for this section
+  image_url: "img/group.jpg"  # Specify the image URL here
+
 - name: "Learning Objectives"
   content: |
     - Evaluate Human-Robot Interaction Systems.
@@ -19,8 +22,5 @@
   content: The group project is a hands-on research project whose research topic and protocol are defined by the students and culminates in a written report and an oral group presentation.
     Students are expected to choose from the below puzzle piece to create a research study. Students submit a 5-6 page report and give an oral presentation
     covering their project at the end of the term. 
-- name: "Puzzle Piece"
-  image: true  # Image for this section
-  image_url: "img/gp_puzzle.png"  # Specify the image URL here
 
 

@@ -36,33 +36,157 @@ title: Class Schedule
         <section class="section-block feature-3">
           <div class="feature-content">
             <div class="feature-content-inner left pt-30">
-       
+              <div class="row">
+                <div id="divdiv" class="column width-7" style="display: flex; flex-direction: row; align-items: flex-start; padding-right: 0px;">
+                  <div class="profile-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-right: 10px; width: 190px;">
+                    <img class="profile-image large rounded" src="img/class-logo.png" alt="Course image" id="profileimage" style="max-width: 100; margin-bottom: 10px;">
+                    <ul class="social-links" style="color: #000000; font-size: 8pt; padding-bottom: 0.2rem; list-style-type: none; padding-left: 0px !important; margin-top: 5px; text-align: center;">
+                      {% for link in site.data.social-links %}
+                        <li style="display: block; text-align: center; margin-bottom: 8px;">
+                          <a href="{{ link }}" target="_blank" style="text-decoration: none; border: none;">
+                            {% if link contains "robotdesign.studio" %}
+                            <img class="profile-image large rounded" src="lab.png" style="max-width: 26px; padding-right:2px;">
+                            {% elsif link contains "mailto" %}
+                              <i class="fas fa-envelope" style="font-size: 24px; color: #000000; padding-right:2px;"></i>
+                              {% elsif link contains "linkedin" %}
+                              <i class="fab fa-linkedin" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+                            {% elsif link contains "x.com" %}
+                              <i class="fab fa-twitter" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+                            
+                            {% elsif link contains "github" %}
+                              <i class="fab fa-github" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+                            {% endif %}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  
+                  
+                
+                  <div class="course-details" style="flex: 1;">
+                    <h5 style="margin-top: 0.5rem; color: black; font-family: 'Arial'; font-size: 14pt;">
+                      <strong>{{ course.title }}</strong>
+                    </h5>
+                    <h5 style="color: #27317E; margin-top: -1.5rem; font-family: 'Arial'; font-size: 12pt;">
+                      {% assign instructors = course.instructors %}
+                      {% if instructors.size > 1 %}
+                        <strong>Instructors:</strong>
+                        {% for instructor in instructors %}
+                          <a href="{{ instructor.url }}" target="_blank" class="no-underline">{{ instructor.name }}</a>{% if forloop.last == false %}, {% endif %}
+                        {% endfor %}
+                      {% else %}
+                        <strong>Instructor: <a href="{{ instructors[0].url }}" target="_blank" class="no-underline">{{ instructors[0].name }}</a></strong>
+                      {% endif %}
+                      
+                      {% assign gsis = course.GSIs %}
+                      {% if gsis.size > 1 %}
+                      <br>
+                        <strong>GSIs:</strong>
+                        {% for gsi in gsis %}
+                          <a href="{{ gsi.url }}" target="_blank" class="no-underline">{{ gsi.name }}</a>{% if forloop.last == false %}, {% endif %}
+                        {% endfor %}
+                      {% else %}
+                      <br>
+                        <strong>GSI:</strong> <a href="{{ gsis[0].url }}" target="_blank" class="no-underline">{{ gsis[0].name }}</a>
+                      {% endif %}
+                      
+                      {% assign ias = course.IAs %}
+                      <br>
+                      {% if ias.size > 1 %}
+                        <strong>IAs:</strong>
+                        {% for ia in ias %}
+                          <a href="{{ ia.url }}" target="_blank" class="no-underline">{{ ia.name }}</a>{% if forloop.last == false %}, {% endif %}
+                        {% endfor %}
+                      {% else %}
+                        <strong>IA:</strong> <a href="{{ ias[0].url }}" target="_blank" class="no-underline">{{ ias[0].name }}</a>
+                      {% endif %}
+                      
+                     <p style="padding-top:10px; color:darkslategray">This course was designed and developed by <a href="https://patricialvesoliveira.com/" target="_blank">Patricia Alves-Oliveira</a>.</p> 
+                      {{ course.department }}<br />{{ course.university }}<br />
+                      Office: {{ course.office }}
+                    </h5>
+                  </div>
+                </div>
+                
+                
+                   <style>
+                    /* Desktop/Laptop styling - horizontal social icons */
+                    .social-links {
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      flex-wrap: wrap;
+                      width: 100%;
+                    }
+                    
+                    .social-links li {
+                      display: inline-block;
+                      margin: 0 5px 5px 0;
+                    }
+                    
+                    /* Mobile styling - vertical social icons */
+                    @media (max-width: 768px) {
+                      .column.width-7 {
+                        flex-direction: row !important;
+                      }
+                      .profile-section {
+                        width: 40px !important;
+                      }
+                    
+                      .social-links li {
+                        margin-bottom: 12px !important;
+                      }
+                    }
+                    @media (min-width: 769) {
+                        .profile-section{
+                          width:190px !important;
+                        }
+                    }
+                  </style>
+                <style>
+                  @media (max-width: 769) {
+                    .column.width-7 {
+                      flex-direction: row !important;
+                    }
+                    .profile-section {
+                      width: 40px !important;
+                    }
+                  
+                    .social-links li {
+                      margin-bottom: 12px !important;
+                    }
+                    #divdiv{
+                      width:100% !important;
+                    }
+                    .social-links li a i {
+            padding-right: 18px !important;
+        }
+                  }
+                </style>
+                <div class="column width-4" style="text-align:left;">
+                  <div style="padding: 0.5em 1em; border: 2px dashed #27317E; background-color: lightskyblue; border-radius: 5px; margin-top: 0em; margin-bottom: 1.5rem;">
+                    
+                    <p style="color: black; font-family: 'Arial'; font-size: 9pt;">
+                      {{ course.yellow_box.top-text }}
+                    </p>
+                
+                    {% for section in course.yellow_box.sections %}
+                      <p style="color: #27317E; font-family: 'Arial'; font-size: 10pt;"><strong>{{ section.title }}</strong></p>
+                      <p style="color: black; font-family: 'Arial'; font-size: 9pt; margin-top: -0.7em;">
+                        <span style="margin-right: 20px;"><i class="fa-solid fa-calendar-days"></i> {{ section.date }}</span>
+                        <span style="margin-right: 28px;"><i class="fa-solid fa-clock"></i> {{ section.time }}</span>
+                        <span><i class="fa-solid fa-building"></i> {{ section.location }}</span>
+                      </p>
+                    {% endfor %}
+                
+                  </div>
+                </div>
+              </div>
                   <div class="row">
                     <div class="column width-2">
                       <div class="thumbnail mb-0">
-                        <img class="profile-image large rounded" src="img/class-logo.png" alt="Course image"
-                          id="profileimage" style="max-height:100%;">
-                        <h6 style="padding-top: 1rem; color: #000000;">
-                          <ul style="color: #000000; font-size: 8pt; padding-bottom: 0.2rem; list-style-type: none; padding-left: 0;">
-                            {% for link in site.data.social-links %}
-                              <li style="display: inline; margin-right: 8px;">
-                                <a href="{{ link }}" target="_blank" style="text-decoration: none; border: none;">
-                                  {% if link contains "mailto" %}
-                                    <i class="fas fa-envelope" style="font-size: 16px; color: #000000;"></i>
-                                  {% elsif link contains "x.com" %}
-                                    <i class="fab fa-twitter" style="font-size: 16px; color: #000000;"></i>
-                                  {% elsif link contains "linkedin" %}
-                                    <i class="fab fa-linkedin" style="font-size: 16px; color: #000000;"></i>
-                                  {% elsif link contains "github" %}
-                                    <i class="fab fa-github" style="font-size: 16px; color: #000000;"></i>
-                                  {% endif %}
-                                </a>
-                              </li>
-                            {% endfor %}
-                          </ul>
-                          
-                          
-                        </h6>
+                       
                         <div style="display:flex; justify-content:space-between; margin-top: -1.5rem; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
                           <h5 style="color: #333;text-align: left; padding-top: 1rem; margin-bottom: 0px; font-family: 'Arial';font-size: smaller;">
                             <strong>SCHEDULE</strong>
@@ -178,68 +302,7 @@ title: Class Schedule
                     </div>
                     <div class="column width-9">
                       <div class="row" style="text-align:justify;">
-                        <div class="column width-6">
-                          <h5 style="margin-top:-1rem; margin-top:0.5rem;color: black; font-family: 'Arial';font-size: 14pt;">
-                            <strong>{{ course.title }}</strong>
-                          </h5>
-                          <h5 style="color: #27317E; margin-top:-1.5rem;font-family: 'Arial';font-size: 12pt;">
-
-                            {% assign instructors = course.instructors %}
-                            {% if instructors.size > 1 %}
-                              <strong>Instructors:</strong>
-                              {% for instructor in instructors %}
-                                <a href="{{ instructor.url }}" target="_blank" class="no-underline">{{ instructor.name }}</a>{% if forloop.last == false %}, {% endif %}
-                              {% endfor %}
-                            {% else %}
-                              <strong>Instructor: <a href="{{ instructors[0].url }}" target="_blank" class="no-underline">{{ instructors[0].name }}</a></strong>
-                            {% endif %}
-                            {% assign gsis = course.GSIs %}
-                            {% if gsis.size > 1 %}
-                            <br>
-                              <strong>GSIs:</strong>
-                              {% for gsi in gsis %}
-                                <a href="{{ gsi.url }}" target="_blank" class="no-underline">{{ gsi.name }}</a>{% if forloop.last == false %}, {% endif %}
-                              {% endfor %}
-                            {% else %}
-                            <br>
-                              <strong>GSI:</strong> <a href="{{ gsis[0].url }}" target="_blank" class="no-underline">{{ gsis[0].name }}</a>
-                            {% endif %}
-                            {% assign ias = course.IAs %}
-                            <br>
-                          {% if ias.size > 1 %}
-                       
-                            <strong>IAs:</strong>
-                            {% for ia in ias %}
-                              <a href="{{ ia.url }}" target="_blank" class="no-underline">{{ ia.name }}</a>{% if forloop.last == false %}, {% endif %}
-                            {% endfor %}
-                          {% else %}
-                            <strong>IA:</strong> <a href="{{ ias[0].url }}" target="_blank" class="no-underline">{{ ias[0].name }}</a>
-                          {% endif %}
-
-                            <br /><br />
-                            {{ course.department }}<br />{{ course.university }}<br />
-                            Office: {{ course.office }}
-
-                          </h5>
-                        </div>
-                        <div class="column width-6" style="text-align:left;">
-                          <div style="padding: 0.5em 1em; border: 2px dashed #27317E; background-color: lightskyblue; border-radius: 5px; margin-top: 0em; margin-bottom: 1.5rem;">
-                            
-                            <p style="color: black; font-family: 'Arial'; font-size: 9pt;">
-                              {{ course.yellow_box.top-text }}
-                            </p>
                         
-                            {% for section in course.yellow_box.sections %}
-                              <p style="color: #27317E; font-family: 'Arial'; font-size: 10pt;"><strong>{{ section.title }}</strong></p>
-                              <p style="color: black; font-family: 'Arial'; font-size: 9pt; margin-top: -0.7em;">
-                                <span style="margin-right: 20px;"><i class="fa-solid fa-calendar-days"></i> {{ section.date }}</span>
-                                <span style="margin-right: 28px;"><i class="fa-solid fa-clock"></i> {{ section.time }}</span>
-                                <span><i class="fa-solid fa-building"></i> {{ section.location }}</span>
-                              </p>
-                            {% endfor %}
-                        
-                          </div>
-                        </div>
                         
                         <div class="column width-12" style="font-family: 'Arial'; ">
 
@@ -265,9 +328,11 @@ title: Class Schedule
                             {% if site.data.labs %}
                           <div class="lab-container">
               
-                                <h5 style="margin-bottom: 10px; margin-top: 10px;">
-                                  <strong>Labs:</strong>
-                                </h5>
+                            <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
+                              <h4 style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
+                                <strong>Labs</strong>
+                              </h4>
+                            </div>
                                 <div class="lab-grid">
                                   {% for lab in site.data.labs %}
                                     <div class="lab-item">
@@ -372,9 +437,7 @@ title: Class Schedule
         grid-template-columns: repeat(1, 1fr);
       }
 
-      .profile-image{
-    width:20%;
-  }
+  
       .row {
     display: flex;
     flex-direction: column; /* Stack the columns vertically */
@@ -444,9 +507,7 @@ title: Class Schedule
     display: flex;
     flex-direction: column; /* Stack the columns vertically */
   }
-  .profile-image{
-    width:20%;
-  }
+ 
   .column.width-2,
   .column.width-9 {
     width: 100%; /* Make both columns take full width */
@@ -463,28 +524,8 @@ title: Class Schedule
   
   <script src="js/timber.master.min.js"></script>
   <script>
-    var modal = document.getElementById("myModal");
-
-    var btn = document.getElementById("myFullListBtn");
-
-    var span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function () {
-      modal.style.display = "block";
-    }
-
-    span.onclick = function () {
-      modal.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-      if (event.target == modal1) {
-        modal1.style.display = "none";
-      }
-    }
+   
+    
     function PlayVideo(num) {
       var name = "video" + num;
       var proj_name = "project" + num;
@@ -531,18 +572,7 @@ title: Class Schedule
       str = str + ".jpg";
       v.poster = str;
     }
-    function change(i) {
-      if (i == 1) {
-        var img = document.getElementById("profileimage");
-        img.src = "img/course_image_hri.jpeg";
-      } else {
-        var img = document.getElementById("profileimage");
-        img.src = "img/course_image_hri.jpeg";
-      }
-    }
-    function redirectPage() {
-      location.href = "creative_making_collection.html";
-    }
+  
   </script>
   <style>
     /* Tablet and Mobile Views */
@@ -551,7 +581,7 @@ title: Class Schedule
     flex-direction: column;
   }
 
-  .column.width-5,
+  .column.width-4,.column.width-5, .colum.width-6,
   .column.width-7 {
     width: 100%;
   }
@@ -608,8 +638,14 @@ title: Class Schedule
   }
 }
 
+             
+                    .social-links{
+            
+            margin-left: 5px !important;
+        }
+                  
+  </style>    
 
-  </style>
 </body>
 
 </html>
