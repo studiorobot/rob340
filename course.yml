@@ -24,7 +24,7 @@ office_hours:
 #   location: "1141 FMCRB"
 # not needed
 description: |
-  This course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include metrics and analysis for human studies of robots, measuring human performance in the context of robotic systems, and exploring how robot behaviors such as gaze, movement, etc, are perceived by humans. By the end of this class, you will know the types of metrics, studies, and analyses you can conduct to understand the performance of a robot system informed by human feedback.
+  This core undergraduate course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include qualitative/quantitative approaches along with objective/subjective metrics to evaluate robots, design of experiments, selection of sample, etc. By the end of this class, students will be knowledgable on the types of metrics, studies, and analyses they can conduct to understand the performance of a robot system informed by human feedback.
 learning_objectives:
   - "Evaluate Human-Robot Interaction Systems."
   - "Learn to work in teams."
