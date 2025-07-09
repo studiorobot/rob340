@@ -7,6 +7,8 @@
   readings:
     - title: GenAI
       link: https://genai.umich.edu/
+    - title: 'Human-Robot Interaction: An Introduction'
+      link: https://www.amazon.com/Human-Robot-Interaction-Introduction-Christoph-Bartneck/dp/1009424238/ref=sr_1_1?crid=1MQFZCMKN5X2Z&qid=1751044606&s=books&sprefix=human-robot+interaction+an+introduction%2Cstripbooks%2C92&sr=1-1
 - class: 2
   video_poster: snippets/class_2.png
   video_src: snippets/class_2.mp4
@@ -16,7 +18,7 @@
   readings:
     - title: A primer for conducting experiments in human-robot interaction
       link: https://www.amazon.com/Laws-Simplicity-Design-Technology-Business/dp/0262134721
-    - title: Human-Robot Interaction; Chapter 10
+    - title: Human-Robot Interaction Chapter 10
       link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf
 - class: 3
   video_poster: snippets/class_3.png
@@ -27,7 +29,7 @@
   readings:
     - title: Switching off a robot
       link: https://www.researchgate.net/publication/221473221_Daisy_Daisy_give_me_your_answer_do_Switching_off_a_robot
-    - title: Human-Robot Interaction; Chapter 9
+    - title: Human-Robot Interaction Chapter 9 & 10
       link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf
     - title: Toward sociable robots
       link: https://www.sciencedirect.com/science/article/pii/S0921889002003731
@@ -57,6 +59,12 @@
       link: https://dl.acm.org/doi/abs/10.1145/3568162.3578625
     - title: A Carryover Effect in HRI
       link: https://dl.acm.org/doi/abs/10.5555/3523760.3523807
+    - title: Daisy, daisy, give me your answer do!" switching off a robot
+      link: https://dl.acm.org/doi/10.1145/1228716.1228746
+    - title: Design and evaluation of a peripheral robotic conversation companion
+      link: https://dl.acm.org/doi/10.1145/2696454.2696495
+    - title: 'From motions to emotions: Can the fundamental emotions be expressed in a robot swarm?'
+      link: https://link.springer.com/article/10.1007/s12369-020-00665-6
 - class: 6
   video_poster: snippets/class_6.png
   video_src: snippets/class_6.mp4
@@ -66,8 +74,14 @@
   readings:
     - title: Dieter Rams
       link: https://readymag.com/webspecials/dieter-rams/
-    # - title: 
-    #   link: https://www.dailymotion.com/video/x8qkd23
+    - title: Discovering social interaction strategies for robots from restricted-perception Wizard-of-Oz studies
+      link: https://ieeexplore.ieee.org/document/7451752
+    - title: 'WoZ4U: an open-source wizard-of-oz interface for easy, efficient and robust HRI experiments'
+      link: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.668057/full
+    - title: 'Wizard of Oz studies: why and how'
+      link: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.668057/full
+    - title: 'Mechanical ottoman: how robotic furniture offers and withdraws support'
+      link: https://dl.acm.org/doi/10.1145/2696454.2696461
 - class: 7
   video_poster: snippets/class_7.png
   video_src: snippets/class_7.mp4
@@ -75,8 +89,14 @@
   description: The role of verbal interactions, inclusing trust, self-disclosure, and components of speech towards robots.
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
   readings:
-    - title: 
-      link: 
+    - title: Conversational gaze aversion for human like robots
+      link: https://dl.acm.org/doi/10.1145/2559636.2559666
+    - title: Tell Me More Designing HRI to Encourage More Trust, Disclosure, and Companionship
+      link: https://ieeexplore.ieee.org/document/7451750
+    - title: An integrative model of organizational trust
+      link: https://journals.aom.org/doi/abs/10.5465/AMR.1995.9508080335
+    - title: Would You Trust a (Faulty) Robot?
+      link: https://dl.acm.org/doi/10.1145/2696454.2696497
 - class: 8
   video_poster: snippets/class_8.png
   video_src:
