@@ -18,7 +18,8 @@ title: Class Schedule
   <title>{{ site.data.head.title }}</title>
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.data.head.icon }}">
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Lato:300,400,700" rel="stylesheet"
+    type="text/css">
 
   <!-- Css -->
   <link rel="stylesheet" href="css/core.min.css" />
@@ -37,33 +38,38 @@ title: Class Schedule
           <div class="feature-content">
             <div class="feature-content-inner left pt-30">
               <div class="row">
-                <div id="divdiv" class="column width-7" style="display: flex; flex-direction: row; align-items: flex-start; padding-right: 0px;">
-                  <div class="profile-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-right: 10px; width: 190px;">
-                    <img class="profile-image large rounded" src="img/class-logo.png" alt="Course image" id="profileimage" style="max-width: 100; margin-bottom: 10px;">
-                    <ul class="social-links" style="color: #000000; font-size: 8pt; padding-bottom: 0.2rem; list-style-type: none; padding-left: 0px !important; margin-top: 5px; text-align: center;">
+                <div id="divdiv" class="column width-7"
+                  style="display: flex; flex-direction: row; align-items: flex-start; padding-right: 0px;">
+                  <div class="profile-section"
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-right: 10px; width: 190px;">
+                    <img class="profile-image large rounded" src="img/class-logo.png" alt="Course image"
+                      id="profileimage" style="max-width: 100; margin-bottom: 10px;">
+                    <ul class="social-links"
+                      style="color: #000000; font-size: 8pt; padding-bottom: 0.2rem; list-style-type: none; padding-left: 0px !important; margin-top: 5px; text-align: center;">
                       {% for link in site.data.social-links %}
-                        <li style="display: block; text-align: center; margin-bottom: 8px;">
-                          <a href="{{ link }}" target="_blank" style="text-decoration: none; border: none;">
-                            {% if link contains "robotdesign.studio" %}
-                            <img class="profile-image large rounded" src="lab.png" style="max-width: 26px; padding-right:2px;">
-                            {% elsif link contains "mailto" %}
-                              <i class="fas fa-envelope" style="font-size: 24px; color: #000000; padding-right:2px;"></i>
-                              {% elsif link contains "linkedin" %}
-                              <i class="fab fa-linkedin" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
-                            {% elsif link contains "x.com" %}
-                              <i class="fab fa-twitter" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
-                            
-                            {% elsif link contains "github" %}
-                              <i class="fab fa-github" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
-                            {% endif %}
-                          </a>
-                        </li>
+                      <li style="display: block; text-align: center; margin-bottom: 8px;">
+                        <a href="{{ link }}" target="_blank" style="text-decoration: none; border: none;">
+                          {% if link contains "robotdesign.studio" %}
+                          <img class="profile-image large rounded" src="lab.png"
+                            style="max-width: 26px; padding-right:2px;">
+                          {% elsif link contains "mailto" %}
+                          <i class="fas fa-envelope" style="font-size: 24px; color: #000000; padding-right:2px;"></i>
+                          {% elsif link contains "linkedin" %}
+                          <i class="fab fa-linkedin" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+                          {% elsif link contains "x.com" %}
+                          <i class="fab fa-twitter" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+
+                          {% elsif link contains "github" %}
+                          <i class="fab fa-github" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+                          {% endif %}
+                        </a>
+                      </li>
                       {% endfor %}
                     </ul>
                   </div>
-                  
-                  
-                
+
+
+
                   <div class="course-details" style="flex: 1;">
                     <h5 style="margin-top: 0.5rem; color: black; font-family: 'Arial'; font-size: 14pt;">
                       <strong>{{ course.title }}</strong>
@@ -71,328 +77,372 @@ title: Class Schedule
                     <h5 style="color: #27317E; margin-top: -1.5rem; font-family: 'Arial'; font-size: 12pt;">
                       {% assign instructors = course.instructors %}
                       {% if instructors.size > 1 %}
-                        <strong>Instructors:</strong>
-                        {% for instructor in instructors %}
-                          <a href="{{ instructor.url }}" target="_blank" class="no-underline">{{ instructor.name }}</a>{% if forloop.last == false %}, {% endif %}
-                        {% endfor %}
+                      <strong>Instructors:</strong>
+                      {% for instructor in instructors %}
+                      <a href="{{ instructor.url }}" target="_blank" class="no-underline">{{ instructor.name }}</a>{% if
+                      forloop.last == false %}, {% endif %}
+                      {% endfor %}
                       {% else %}
-                        <strong>Instructor: <a href="{{ instructors[0].url }}" target="_blank" class="no-underline">{{ instructors[0].name }}</a></strong>
+                      <strong>Instructor: <a href="{{ instructors[0].url }}" target="_blank" class="no-underline">{{
+                          instructors[0].name }}</a></strong>
                       {% endif %}
-                      
+
                       {% assign gsis = course.GSIs %}
                       {% if gsis.size > 1 %}
                       <br>
-                        <strong>GSIs:</strong>
-                        {% for gsi in gsis %}
-                          <a href="{{ gsi.url }}" target="_blank" class="no-underline">{{ gsi.name }}</a>{% if forloop.last == false %}, {% endif %}
-                        {% endfor %}
+                      <strong>GSIs:</strong>
+                      {% for gsi in gsis %}
+                      <a href="{{ gsi.url }}" target="_blank" class="no-underline">{{ gsi.name }}</a>{% if forloop.last
+                      == false %}, {% endif %}
+                      {% endfor %}
                       {% else %}
                       <br>
-                        <strong>GSI:</strong> <a href="{{ gsis[0].url }}" target="_blank" class="no-underline">{{ gsis[0].name }}</a>
+                      <strong>GSI:</strong> <a href="{{ gsis[0].url }}" target="_blank" class="no-underline">{{
+                        gsis[0].name }}</a>
                       {% endif %}
-                      
+
                       {% assign ias = course.IAs %}
                       <br>
                       {% if ias.size > 1 %}
-                        <strong>IAs:</strong>
-                        {% for ia in ias %}
-                          <a href="{{ ia.url }}" target="_blank" class="no-underline">{{ ia.name }}</a>{% if forloop.last == false %}, {% endif %}
-                        {% endfor %}
+                      <strong>IAs:</strong>
+                      {% for ia in ias %}
+                      <a href="{{ ia.url }}" target="_blank" class="no-underline">{{ ia.name }}</a>{% if forloop.last ==
+                      false %}, {% endif %}
+                      {% endfor %}
                       {% else %}
-                        <strong>IA:</strong> <a href="{{ ias[0].url }}" target="_blank" class="no-underline">{{ ias[0].name }}</a>
+                      <strong>IA:</strong> <a href="{{ ias[0].url }}" target="_blank" class="no-underline">{{
+                        ias[0].name }}</a>
                       {% endif %}
-                      
-                     <p style="padding-top:10px; color:darkslategray">This course was designed and developed by <a href="https://patricialvesoliveira.com/" target="_blank">Patricia Alves-Oliveira</a>.</p> 
+
+                      <p style="padding-top:10px; color:darkslategray">This course was designed and developed by <a
+                          href="https://patricialvesoliveira.com/" target="_blank">Patricia Alves-Oliveira</a>.</p>
                       {{ course.department }}<br />{{ course.university }}<br />
                       Office: {{ course.office }}
                     </h5>
                   </div>
                 </div>
-                
-                
-                   <style>
-                    /* Desktop/Laptop styling - horizontal social icons */
-                    .social-links {
-                      display: flex;
-                      flex-direction: row;
-                      justify-content: center;
-                      flex-wrap: wrap;
-                      width: 100%;
+
+
+                <style>
+                  /* Desktop/Laptop styling - horizontal social icons */
+                  .social-links {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                  }
+
+                  .social-links li {
+                    display: inline-block;
+                    margin: 0 5px 5px 0;
+                  }
+
+                  /* Mobile styling - vertical social icons */
+                  @media (max-width: 768px) {
+                    .column.width-7 {
+                      flex-direction: row !important;
                     }
-                    
+
+                    .profile-section {
+                      width: 40px !important;
+                    }
+
                     .social-links li {
-                      display: inline-block;
-                      margin: 0 5px 5px 0;
+                      margin-bottom: 12px !important;
                     }
-                    
-                    /* Mobile styling - vertical social icons */
-                    @media (max-width: 768px) {
-                      .column.width-7 {
-                        flex-direction: row !important;
-                      }
-                      .profile-section {
-                        width: 40px !important;
-                      }
-                    
-                      .social-links li {
-                        margin-bottom: 12px !important;
-                      }
+                  }
+
+                  @media (min-width: 769) {
+                    .profile-section {
+                      width: 190px !important;
                     }
-                    @media (min-width: 769) {
-                        .profile-section{
-                          width:190px !important;
-                        }
-                    }
-                  </style>
+                  }
+                </style>
                 <style>
                   @media (max-width: 769) {
                     .column.width-7 {
                       flex-direction: row !important;
                     }
+
                     .profile-section {
                       width: 40px !important;
                     }
-                  
+
                     .social-links li {
                       margin-bottom: 12px !important;
                     }
-                    #divdiv{
-                      width:100% !important;
+
+                    #divdiv {
+                      width: 100% !important;
                     }
+
                     .social-links li a i {
-            padding-right: 18px !important;
-        }
+                      padding-right: 18px !important;
+                    }
                   }
                 </style>
                 <div class="column width-4" style="text-align:left;">
-                  <div style="padding: 0.5em 1em; border: 2px dashed #27317E; background-color: lightskyblue; border-radius: 5px; margin-top: 0em; margin-bottom: 1.5rem;">
-                    
+                  <div
+                    style="padding: 0.5em 1em; border: 2px dashed #27317E; background-color: lightskyblue; border-radius: 5px; margin-top: 0em; margin-bottom: 1.5rem;">
+
                     <p style="color: black; font-family: 'Arial'; font-size: 9pt;">
                       {{ course.yellow_box.top-text }}
                     </p>
-                
+
                     {% for section in course.yellow_box.sections %}
-                      <p style="color: #27317E; font-family: 'Arial'; font-size: 10pt;"><strong>{{ section.title }}</strong></p>
-                      <p style="color: black; font-family: 'Arial'; font-size: 9pt; margin-top: -0.7em;">
-                        <span style="margin-right: 20px;"><i class="fa-solid fa-calendar-days"></i> {{ section.date }}</span>
-                        <span style="margin-right: 28px;"><i class="fa-solid fa-clock"></i> {{ section.time }}</span>
-                        <span><i class="fa-solid fa-building"></i> {{ section.location }}</span>
-                      </p>
+                    <p style="color: #27317E; font-family: 'Arial'; font-size: 10pt;"><strong>{{ section.title
+                        }}</strong></p>
+                    <p style="color: black; font-family: 'Arial'; font-size: 9pt; margin-top: -0.7em;">
+                      <span style="margin-right: 20px;"><i class="fa-solid fa-calendar-days"></i> {{ section.date
+                        }}</span>
+                      <span style="margin-right: 28px;"><i class="fa-solid fa-clock"></i> {{ section.time }}</span>
+                      <span><i class="fa-solid fa-building"></i> {{ section.location }}</span>
+                    </p>
                     {% endfor %}
-                
+
                   </div>
                 </div>
               </div>
-                  <div class="row">
-                    <div class="column width-2">
-                      <div class="thumbnail mb-0">
-                       
-                        <div style="display:flex; justify-content:space-between; margin-top: -1.5rem; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                          <h5 style="color: #333;text-align: left; padding-top: 1rem; margin-bottom: 0px; font-family: 'Arial';font-size: smaller;">
-                            <strong>SCHEDULE</strong>
-                          </h5>
-                        </div>
-                        
-                        <!-- Loop through all sections -->
-                        {% for section in site.data.schedule %}
-                          {% if section.title and section.sessions %}
-                            <div >
-                              <h6 style="color: #333; font-family: 'Arial'; font-size: smaller; margin-bottom:5px; margin-top: 5px;"><strong>{{ section.title }}</strong></h6>
-                              {% for session in section.sessions %}
-                                <div style="display: flex; justify-content: left; column-gap: 10px; color: #333; font-size: 10pt;">
-                                  <p style="font-family: 'Arial'; font-size: 7pt;">{{ session.date }}:</p>
-                                  <p style="font-family: 'Arial'; font-size: 7pt;">{{ session.class }}</p>
-                                </div>
-                              {% endfor %}
-                            </div>
-                          {% endif %}
+              <div class="row">
+                <div class="column width-2">
+                  <div class="thumbnail mb-0">
+
+                    <div
+                      style="display:flex; justify-content:space-between; margin-top: -1.5rem; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                      <h5
+                        style="color: #333;text-align: left; padding-top: 1rem; margin-bottom: 0px; font-family: 'Arial';font-size: smaller;">
+                        <strong>SCHEDULE</strong>
+                      </h5>
+                    </div>
+
+                    <!-- Loop through all sections -->
+                    {% for section in site.data.schedule %}
+                    {% if section.title and section.sessions %}
+                    <div>
+                      <h6
+                        style="color: #333; font-family: 'Arial'; font-size: smaller; margin-bottom:5px; margin-top: 5px;">
+                        <strong>{{ section.title }}</strong>
+                      </h6>
+                      {% for session in section.sessions %}
+                      <div
+                        style="display: flex; justify-content: left; column-gap: 10px; color: #333; font-size: 10pt;">
+                        <p style="font-family: 'Arial'; font-size: 7pt;">{{ session.date }}:</p>
+                        <p style="font-family: 'Arial'; font-size: 7pt;">{{ session.class }}</p>
+                      </div>
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+
+                    <div
+                      style="display:flex; justify-content:space-between; margin-top: 0.5rem; border-top: 1px #636363 dashed; padding-top: 0.5rem;">
+                      <h5
+                        style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial'; font-size: smaller;">
+                        <strong>GRADING</strong>
+                      </h5>
+                    </div>
+
+                    {% for section in site.data.grading %}
+                    <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                      <p style="font-family: 'Arial'; font-size: 7pt;">{{ section.title }}</p>
+                    </div>
+
+                    {% for paragraph in section.text %}
+                    <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                      <p style="font-family: 'Arial'; font-size: 7pt;">{{ paragraph }}</p>
+                    </div>
+                    {% endfor %}
+
+                    {% unless forloop.last %}
+                    <div
+                      style="display: flex; justify-content:left; column-gap: 10px;color: #333;  border-top: 1px #b8b6b6 dashed;">
+                      <p style="font-family: 'Arial'; font-size:7pt;"></p>
+                    </div>
+                    {% endunless %}
+                    {% endfor %}
+
+                  </div>
+
+                  <div class="thumbnail mb-0">
+                    <div
+                      style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                      <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                        <strong>STUDENTS</strong>
+                      </h5>
+                    </div>
+                    {% if site.data.students.undergraduates %}
+                    <div style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                      <p style="font-family: 'Arial'; font-size:8pt;"><strong>Undergraduates</strong><br />
+                        {% for student in site.data.students.undergraduates %}
+                        {{ student }}<br />
                         {% endfor %}
-                        
-                        <div style="display:flex; justify-content:space-between; margin-top: 0.5rem; border-top: 1px #636363 dashed; padding-top: 0.5rem;">
-                          <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial'; font-size: smaller;">
-                            <strong>GRADING</strong>
-                          </h5>
-                        </div>
-                        
-                        {% for section in site.data.grading %}
-                          <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
-                            <p style="font-family: 'Arial'; font-size: 7pt;">{{ section.title }}</p>
-                          </div>
-                          
-                          {% for paragraph in section.text %}
-                            <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
-                              <p style="font-family: 'Arial'; font-size: 7pt;">{{ paragraph }}</p>
-                            </div>
-                          {% endfor %}
-                          
-                          {% unless forloop.last %}
-                          <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;  border-top: 1px #b8b6b6 dashed;">
-                            <p style="font-family: 'Arial'; font-size:7pt;"></p>
-                          </div>
-                        {% endunless %}
+                      </p>
+                    </div>
+                    {% endif %}
+                    {% if site.data.students.graduates %}
+                    <div style="margin-top:1rem; display: flex; justify-content:left; column-gap: 10px;color: #333;">
+                      <p style="font-family: 'Arial'; font-size:8pt;"><strong>Graduates</strong><br />
+                        {% for student in site.data.students.graduates %}
+                        {{ student }}<br />
                         {% endfor %}
-                        
+                      </p>
+                    </div>
+                    {% endif %}
+                    <div class="talk-header"
+                      style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                      <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                        <strong>INVITED TALKS</strong>
+                      </h5>
+                    </div>
+
+                    {% for talk in site.data.talks %}
+                    <div class="talk"
+                      style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 20px; color: #333; margin-bottom: 10px;">
+                      <!-- Image -->
+                      <p>
+                        <img src="{{ talk.image }}" style="max-width: 100px; height: auto; object-fit: cover;" />
+                      </p>
+
+                      <!-- Talk Information -->
+                      <p style="font-family: 'Arial'; font-size: 6pt;">
+                        <strong><a href="{{ talk.link }}">{{ talk.name }}</a></strong><br />
+                        {{ talk.title }}<br />
+                        {{ talk.institution }}
+                      </p>
+                    </div>
+                    {% endfor %}
+
+                    <div class="talk-header"
+                      style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
+                      <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                        <strong>GROUP PROJECTS</strong>
+                      </h5>
+                    </div>
+
+                    {% for project in site.data.group_projects %}
+                    <div class="talk"
+                      style="display: flex; justify-content:left; column-gap: 15px;color: #333;margin-bottom: 10px;">
+                      <p><img src="{{ project.image }}" /></p>
+                      <p style="font-family: 'Arial'; font-size:6pt;">
+                        <strong><a href="{{ project.link }}" target="_blank">{{ project.name }}</a></strong>
+                      </p>
+                    </div>
+                    {% endfor %}
+
+                  </div>
+                </div>
+                <div class="column width-9">
+                  <div class="row" style="text-align:justify;">
+
+
+                    <div class="column width-12" style="font-family: 'Arial'; ">
+
+                      {% for section in site.data.main %}
+                      {% if section.name %}
+
+                      <h5 style="margin-bottom: 5px; margin-top: 10px;">
+                        <strong>{{ section.name }}:</strong>
+                      </h5>
+
+                      <div>
+                        {{ section.content | markdownify | remove: '<p>' | remove: '</p>' }}
                       </div>
 
-                      <div class="thumbnail mb-0">
-                        <div
-                          style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                          <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
-                            <strong>STUDENTS</strong>
-                          </h5>
+                      {% endif %}
+
+                      {% if section.image == true %}
+                      <img style="margin-top: 1em; margin-bottom: 1em;" src="{{ section.image_url }}" />
+                      {% endif %}
+
+                      {% endfor %}
+
+                      {% if site.data.labs %}
+                      <div class="lab-container">
+
+                        <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
+                          <h4
+                            style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
+                            <strong>Labs</strong>
+                          </h4>
                         </div>
-                        {% if site.data.students.undergraduates %}
-                        <div
-                          style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 10px;color: #333;">
-                          <p style="font-family: 'Arial'; font-size:8pt;"><strong>Undergraduates</strong><br />
-                            {% for student in site.data.students.undergraduates %}
-                            {{ student }}<br />
-                            {% endfor %}
-                          </p>
-                        </div>
-                        {% endif %}
-                        {% if site.data.students.graduates %}
-                        <div
-                          style="margin-top:1rem; display: flex; justify-content:left; column-gap: 10px;color: #333;">
-                          <p style="font-family: 'Arial'; font-size:8pt;"><strong>Graduates</strong><br />
-                            {% for student in site.data.students.graduates %}
-                            {{ student }}<br />
-                            {% endfor %}
-                          </p>
-                        </div>
-                        {% endif %}
-                        <div class="talk-header" style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                          <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
-                            <strong>INVITED TALKS</strong>
-                          </h5>
-                        </div>
-                        
-                        {% for talk in site.data.talks %}
-                          <div class="talk" style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 20px; color: #333; margin-bottom: 10px;">
-                            <!-- Image -->
-                            <p>
-                              <img src="{{ talk.image }}" style="max-width: 100px; height: auto; object-fit: cover;" />
-                            </p>
-                            
-                            <!-- Talk Information -->
-                            <p style="font-family: 'Arial'; font-size: 6pt;">
-                              <strong><a href="{{ talk.link }}">{{ talk.name }}</a></strong><br />
-                              {{ talk.title }}<br />
-                              {{ talk.institution }}
-                            </p>
+                        <div class="lab-grid">
+
+                          {% for lab in site.data.labs %}
+                          <div class="lab-item">
+                            <div class="lab-info">
+                              <img class="lab-image" src="{{ base_path }}{{ lab.image_url }}"
+                                alt="Lab {{ forloop.index }}" />
+                              {% if lab.link %} <a class="lab-link" href="{{ lab.link }}" target="_blank"> {% endif %}
+                                <strong>Lab {{ forloop.index }}:</strong> {{ lab.title }}{% if lab.link %} </a> {% endif
+                              %}
+                              <p class="lab-description">{{ lab.description }}</p>
+                            </div>
                           </div>
-                        {% endfor %}
-                        
-                        <div class="talk-header" style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                          <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
-                            <strong>GROUP PROJECTS</strong>
-                          </h5>
+                          {% endfor %}
                         </div>
-                        
-                        {% for project in site.data.group_projects %}
-                          <div class="talk" style="display: flex; justify-content:left; column-gap: 15px;color: #333;margin-bottom: 10px;">
-                            <p><img src="{{ project.image }}" /></p>
-                            <p style="font-family: 'Arial'; font-size:6pt;">
-                              <strong><a href="{{ project.link }}">{{ project.name }}</a></strong>
-                            </p>
-                          </div>
-                        {% endfor %}
-                        
+                      </div>
+                      {% endif %}
+                      <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
+                        <h4
+                          style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
+                          <strong>Class Lecture Summary</strong>
+                        </h4>
                       </div>
                     </div>
-                    <div class="column width-9">
-                      <div class="row" style="text-align:justify;">
-                        
-                        
-                        <div class="column width-12" style="font-family: 'Arial'; ">
 
-                          {% for section in site.data.main %}
-                          {% if section.name %}
-
-                              <h5 style="margin-bottom: 5px; margin-top: 10px;">
-                                <strong>{{ section.name }}:</strong>
-                              </h5>
-                              
-                              <div>
-                                {{ section.content | markdownify | remove: '<p>' | remove: '</p>' }}
-                              </div>
-                              
-                            {% endif %}
-                        
-                            {% if section.image == true %}
-                              <img style="margin-top: 1em; margin-bottom: 1em;" src="{{ section.image_url }}" />
-                            {% endif %}
-                          
-                          {% endfor %}
-
-                            {% if site.data.labs %}
-                          <div class="lab-container">
-              
-                            <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
-                              <h4 style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
-                                <strong>Labs</strong>
-                              </h4>
-                            </div>
-                                <div class="lab-grid">
-                                  {% for lab in site.data.labs %}
-                                    <div class="lab-item">
-                                      <img class="lab-image" src="{{ lab.image_url }}" alt="Lab {{ forloop.index }}" />
-                                      <div class="lab-info">
-                                    {% if lab.link %}   <a class="lab-link" href="{{ lab.link }}" target="_blank"> {% endif %} <strong>Lab {{ forloop.index }}:</strong> {{ lab.title }}{% if lab.link %} </a> {% endif %} 
-                                        <p class="lab-description">{{ lab.description }}</p>
-                                      </div>
-                                    </div>
-                                  {% endfor %}
-                                </div>
-                          </div>
-                          {% endif %}
-                          <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
-                            <h4 style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
-                              <strong>Class Lecture Summary</strong>
-                            </h4>
-                          </div>
-                        </div>
-
-                      </div>
-                          {% for lecture in site.data.lectures %}
-                            <div class="row" id="project{{ lecture.class }}" style="padding:1rem 0rem;">
-                              <div class="column width-5" onmouseover="PlayVideo({{ lecture.class }})" onmouseleave="StopVideoPlay({{ lecture.class }})">
-                                <video loop muted preload="auto" playsinline id="video{{ lecture.class }}" poster="{{ lecture.video_poster }}"
-                                  style="width: 320px; height: 180px;margin-top: 0.7rem; object-fit: cover;">
-                                  <source type="video/mp4" src="{{ lecture.video_src }}" style="width: 300px; height: 220px; object-position: center;">
-                                </video>
-                              </div>
-                              <div class="column width-7" style="padding-right: 1em;" id="magdisplay">
-                                <h5 style="color: #2c98d3; font-weight: bold;">CLASS {{ lecture.class }}</h5>
-                                <h5 style="font-weight: bold; margin-top: -1em; text-align: left;">{{ lecture.title }}</h5>
-                                <h5 class="authors" style="text-align: left;">{{ lecture.description }}</h5>
-                                <h5 style="font-weight: bold;">
-                                  <a href="{{ lecture.slides_link }}" target="_blank" style="border: none; color: #3b87c1;">&nbsp;SLIDES</a>
-                                </h5>
-                                {% if lecture.readings %}
-                                {% if lecture.readings[0].title %}
-                                  <div style="margin-top:0.5em; background-color: lightskyblue; color:#333; padding-left:0.5em; padding-top: 0.2em; border: 1px #333 dashed; border-radius:5px;">
-                                    <h5 style="margin-bottom:0.3em;"><strong>Readings:</strong>
-                                      {% for reading in lecture.readings %}
-                                        <a href="{{ reading.link }}" target="_blank" style="border: none; color: navy;">&nbsp;{{ reading.title }}</a>{% if forloop.last == false %}, {% endif %}
-                                      {% endfor %}
-                                    </h5>
-                                  </div>
-                                  {% endif %}
-                                {% endif %}
-                              </div>
-                            </div>
-                          {% endfor %}
-                      </div>
+                  </div>
+                  {% for lecture in site.data.lectures %}
+                  <div class="row" id="project{{ forloop.index }}" style="padding:1rem 0rem;">
+                    <div class="column width-5" onmouseover="PlayVideo({{ forloop.index }})"
+                      onmouseleave="StopVideoPlay({{ forloop.index }})" style="padding:0px; padding-left:15px;">
+                      <video loop muted preload="auto" playsinline id="video{{ forloop.index }}"
+                        poster="{{ lecture.video_poster }}"
+                        style="width: 320px; height: 180px;margin-top: 0.7rem; object-fit: cover;">
+                        <source type="video/mp4" src="{{ lecture.video_src }}"
+                          style="width: 300px; height: 220px; object-position: center;">
+                      </video>
                     </div>
-      
-       
+                    <div class="column width-7" style="padding:0px; padding-right:15px;" id="magdisplay">
+                      <h5 style="color: #2c98d3; font-weight: bold;">CLASS {{ forloop.index }}
+                        <span style="color:#27317E">|</span>
+                        <span style="color:black;">{{ lecture.title }}</span>
+                        <span style="color:#27317E">|</span> <a href="{{ lecture.slides_link }}" target="_blank"
+                          style="border: none; color: #3b87c1;">&nbsp;SLIDES</a>
+                      </h5>
+                      <div class="authors" style="text-align: left;">{{ lecture.description }}</div>
+                      <div style="font-weight: bold;">
+                      </div>
+                      {% if lecture.readings %}
+                      {% if lecture.readings[0].title %}
+                      <div
+                        style="margin-top: 0.5em; background-color: lightskyblue; color: #333; padding: 0.5em; border: 1px #333 dashed; border-radius: 5px;">
+                        <h5 style="margin-bottom: 0.5em;"><strong>Readings:</strong></h5>
+                        <ul style="margin-top: 0; margin-bottom:0px;">
+                          {% for reading in lecture.readings %}
+                          <li>
+                            <a href="{{ reading.link }}" target="_blank" style="border: none; color: navy;">
+                              {{ reading.title }}
+                            </a>
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                      {% endif %}
+                      {% endif %}
+                    </div>
+                  </div>
+                  {% endfor %}
                 </div>
               </div>
+
+
             </div>
-        </section>
+          </div>
       </div>
+      </section>
     </div>
+  </div>
   </div>
   <!-- </section>
 			</div> -->
@@ -412,120 +462,136 @@ title: Class Schedule
     </div>
   </footer>
 
-                        
+
   <style>
     .lab-container {
       margin-top: 20px;
     }
-    
+
     .lab-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
-    
+
     /* Tablet View: 2 Columns */
     @media (max-width: 992px) {
       .lab-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
-    
+
     /* Mobile View: 1 Column */
     @media (max-width: 600px) {
       .lab-grid {
         grid-template-columns: repeat(1, 1fr);
       }
 
-  
+
       .row {
-    display: flex;
-    flex-direction: column; /* Stack the columns vertically */
-  }
+        display: flex;
+        flex-direction: column;
+        /* Stack the columns vertically */
+      }
 
-  .column.width-2,
-  .column.width-9 {
-    width: 100%; /* Make both columns take full width */
-  }
+      .column.width-2,
+      .column.width-9 {
+        width: 100%;
+        /* Make both columns take full width */
+      }
 
-  .column.width-9 {
-    order: -1; /* Move the 'width-9' column above 'width-2' */
-  }
+      .column.width-9 {
+        order: -1;
+        /* Move the 'width-9' column above 'width-2' */
+      }
     }
-    
+
     .lab-item {
-    display: flex;
-    align-items: center; /* Ensures text and image align properly */
-    gap: 15px;
-    justify-content: space-evenly;
-    padding: 10px;
-    background: #f9f9f9;
-    border-radius: 8px;
-  }
-  
-  .lab-image {
-    width: 80px; /* Fixed width */
-    height: 80px; /* Fixed height for consistency */
-    object-fit: contain; /* Prevents distortion */
-    border-radius: 5px;
-  }
-  
-  .lab-info {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 250px; /* Prevents excessive stretching */
-    text-align: left; /* Ensures text stays aligned naturally */
-    white-space: normal; /* Allows proper word wrapping */
-    word-spacing: normal; /* Prevents extra gaps between words */
-  }
-  
-  .lab-link {
-    font-size: 16px;
-    font-weight: bold;
-    color: #007bff;
-    text-decoration: none;
-    display: inline-block; /* Ensures the text behaves naturally */
-    white-space: normal; /* Prevents stretching */
-    word-spacing: normal; /* Resets unnecessary spacing */
-  }
-  
-  .lab-description {
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-    max-width: 250px;
-    white-space: normal; /* Allows normal word wrapping */
-    word-spacing: normal; /* Prevents excessive gaps */
-  }
-  
-      /* Mobile View: 1 Column */
-      @media (max-width: 1024px) {
-   
-      .row {
-    display: flex;
-    flex-direction: column; /* Stack the columns vertically */
-  }
- 
-  .column.width-2,
-  .column.width-9 {
-    width: 100%; /* Make both columns take full width */
-  }
-
-  .column.width-9 {
-    order: -1; /* Move the 'width-9' column above 'width-2' */
-  }
+      display: flex;
+      align-items: center;
+      /* Ensures text and image align properly */
+      gap: 15px;
+      justify-content: space-evenly;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 8px;
     }
-    
 
-  
+    .lab-image {
+      width: 80px;
+      /* Fixed width */
+      height: 80px;
+      /* Fixed height for consistency */
+      object-fit: contain;
+      /* Prevents distortion */
+      border-radius: 5px;
+    }
+
+    .lab-info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 250px;
+      /* Prevents excessive stretching */
+      text-align: left;
+      /* Ensures text stays aligned naturally */
+      white-space: normal;
+      /* Allows proper word wrapping */
+      word-spacing: normal;
+      /* Prevents extra gaps between words */
+    }
+
+    .lab-link {
+      font-size: 16px;
+      font-weight: bold;
+      color: #007bff;
+      text-decoration: none;
+      display: inline-block;
+      /* Ensures the text behaves naturally */
+      white-space: normal;
+      /* Prevents stretching */
+      word-spacing: normal;
+      /* Resets unnecessary spacing */
+    }
+
+    .lab-description {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+      max-width: 250px;
+      white-space: normal;
+      /* Allows normal word wrapping */
+      word-spacing: normal;
+      /* Prevents excessive gaps */
+    }
+
+    /* Mobile View: 1 Column */
+    @media (max-width: 1024px) {
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        /* Stack the columns vertically */
+      }
+
+      .column.width-2,
+      .column.width-9 {
+        width: 100%;
+        /* Make both columns take full width */
+      }
+
+      .column.width-9 {
+        order: -1;
+        /* Move the 'width-9' column above 'width-2' */
+      }
+    }
   </style>
-  
+
   <script src="js/timber.master.min.js"></script>
   <script>
-   
-    
+
+
     function PlayVideo(num) {
       var name = "video" + num;
       var proj_name = "project" + num;
@@ -572,79 +638,100 @@ title: Class Schedule
       str = str + ".jpg";
       v.poster = str;
     }
-  
+
   </script>
   <style>
     /* Tablet and Mobile Views */
-@media (max-width: 1140px) {
-  .row {
-    flex-direction: column;
-  }
+    @media (max-width: 1140px) {
+      .row {
+        flex-direction: column;
+      }
 
-  .column.width-4,.column.width-5, .colum.width-6,
-  .column.width-7 {
-    width: 100%;
-  }
+      .column.width-4,
+      .column.width-5,
+      .colum.width-6,
+      .column.width-7 {
+        width: 100%;
+      }
 
-  .column.width-7 {
-    margin-top: 1em; /* Add some space between the video and the content */
-  }
+      .column.width-7 {
+        margin-top: 1em;
+        /* Add some space between the video and the content */
+      }
 
-  #magdisplay {
-    margin-top: 1rem;
-  }
-}
-/* Tablet and smaller screens */
-@media (min-width:769px) and (max-width: 1140px) {
-  
-  /* Invited Talks Section */
-  .talk {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center the content */
-    margin-bottom: 1rem; /* Space between each talk */
-  }
+      #magdisplay {
+        margin-top: 1rem;
+      }
+    }
 
-  .talk img {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 0.5rem; /* Space between the image and the text */
-  }
+    /* Tablet and smaller screens */
+    @media (min-width:769px) and (max-width: 1140px) {
 
-  .talk p {
-    font-size: 10pt; /* Adjust font size for better readability */
-    margin-top: 0.5rem; /* Add space between text and image */
-    text-align: center; /* Center the text */
-  }
+      /* Invited Talks Section */
+      .talk {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center the content */
+        margin-bottom: 1rem;
+        /* Space between each talk */
+      }
 
-  /* Group Projects Section */
-  .talk {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center the content */
-    margin-bottom: 1rem; /* Space between each project */
-  }
+      .talk img {
+        max-width: 100%;
+        /* Make the image responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-bottom: 0.5rem;
+        /* Space between the image and the text */
+      }
 
-  .talk img {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 0.5rem; /* Space between the image and the text */
-  }
+      .talk p {
+        font-size: 10pt;
+        /* Adjust font size for better readability */
+        margin-top: 0.5rem;
+        /* Add space between text and image */
+        text-align: center;
+        /* Center the text */
+      }
 
-  .talk p {
-    font-size: 10pt; /* Adjust font size for better readability */
-    margin-top: 0.5rem; /* Add space between text and image */
-    text-align: center; /* Center the text */
-  }
-}
+      /* Group Projects Section */
+      .talk {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center the content */
+        margin-bottom: 1rem;
+        /* Space between each project */
+      }
 
-             
-                    .social-links{
-            
-            margin-left: 5px !important;
-        }
-                  
-  </style>    
+      .talk img {
+        max-width: 100%;
+        /* Make the image responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-bottom: 0.5rem;
+        /* Space between the image and the text */
+      }
+
+      .talk p {
+        font-size: 10pt;
+        /* Adjust font size for better readability */
+        margin-top: 0.5rem;
+        /* Add space between text and image */
+        text-align: center;
+        /* Center the text */
+      }
+    }
+
+
+    .social-links {
+
+      margin-left: 5px !important;
+    }
+  </style>
 
 </body>
 

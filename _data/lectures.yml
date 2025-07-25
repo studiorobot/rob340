@@ -1,18 +1,17 @@
-- class: 1
-  video_poster: snippets/class_1.png
+- video_poster: snippets/class_1.png
   video_src: snippets/class_1.mp4
-  title: 'Lecture: Introduction for the Course'
+  title: "Lecture: Introduction for the Course"
   description: This class was an introduction to Human Evaluations of Robot Systems
   slides_link: https://umich.instructure.com/courses/747985
   readings:
     - title: GenAI
       link: https://genai.umich.edu/
-    - title: 'Human-Robot Interaction: An Introduction'
+    - title: "Human-Robot Interaction: An Introduction"
       link: https://www.amazon.com/Human-Robot-Interaction-Introduction-Christoph-Bartneck/dp/1009424238/ref=sr_1_1?crid=1MQFZCMKN5X2Z&qid=1751044606&s=books&sprefix=human-robot+interaction+an+introduction%2Cstripbooks%2C92&sr=1-1
-- class: 2
-  video_poster: snippets/class_2.png
+
+- video_poster: snippets/class_2.png
   video_src: snippets/class_2.mp4
-  title: 'Lecture: Evaluation Protocol'
+  title: "Lecture: Evaluation Protocol"
   description: Evaluation protocol for experimental studies in human-robot interaction (part 1).
   slides_link: https://umich.instructure.com/courses/747985
   readings:
@@ -20,10 +19,10 @@
       link: https://www.amazon.com/Laws-Simplicity-Design-Technology-Business/dp/0262134721
     - title: Human-Robot Interaction Chapter 10
       link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf
-- class: 3
-  video_poster: snippets/class_3.png
+
+- video_poster: snippets/class_3.png
   video_src: snippets/class_3.mp4
-  title: 'Lecture: Evaluation Protocol cont. & Emotions'
+  title: "Lecture: Evaluation Protocol cont. & Emotions"
   description: Evaluation protocol for experimental studies in human-robot interaction (part 2).
   slides_link: https://umich.instructure.com/courses/747985
   readings:
@@ -35,27 +34,27 @@
       link: https://www.sciencedirect.com/science/article/pii/S0921889002003731
     - title: Robots with "soul"
       link: https://www.youtube.com/watch?v=utV1sdjr4PY&ab_channel=TED
-- class: 4
-  video_poster: snippets/class_4.png
+
+- video_poster: snippets/class_4.png
   video_src: snippets/class_4.mp4
-  title: 'Lecture: Non-verbal behaviors'
+  title: "Lecture: Non-verbal behaviors"
   description: The role of non-verbal behaviors, such as gaze, in human-robot interaction.
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39346951
   readings:
     - title: Conversational gaze aversion for humanlike robots
       link: https://dl.acm.org/doi/10.1145/2559636.2559666
-- class: 5
-  video_poster: snippets/class_5.png
+
+- video_poster: snippets/class_5.png
   video_src: snippets/class_5.mp4
-  title: 'Lecture: Emotions'
+  title: "Lecture: Emotions"
   description: History of the study of emotions and their role during interactions with robots.
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39436924
   readings:
-    - title: 'Micbot'
+    - title: "Micbot"
       link: https://dl.acm.org/doi/10.5555/3378680.3378701
-    - title: 'Robots in Groups and Teams'
+    - title: "Robots in Groups and Teams"
       link: https://dl.acm.org/doi/abs/10.1145/3415247
-    - title: 'A Robotic Companion for Psychological Well-being'
+    - title: "A Robotic Companion for Psychological Well-being"
       link: https://dl.acm.org/doi/abs/10.1145/3568162.3578625
     - title: A Carryover Effect in HRI
       link: https://dl.acm.org/doi/abs/10.5555/3523760.3523807
@@ -63,12 +62,12 @@
       link: https://dl.acm.org/doi/10.1145/1228716.1228746
     - title: Design and evaluation of a peripheral robotic conversation companion
       link: https://dl.acm.org/doi/10.1145/2696454.2696495
-    - title: 'From motions to emotions: Can the fundamental emotions be expressed in a robot swarm?'
+    - title: "From motions to emotions: Can the fundamental emotions be expressed in a robot swarm?"
       link: https://link.springer.com/article/10.1007/s12369-020-00665-6
-- class: 6
-  video_poster: snippets/class_6.png
+
+- video_poster: snippets/class_6.png
   video_src: snippets/class_6.mp4
-  title: 'Lecture: Wizard of Oz & Peripheral interactions'
+  title: "Lecture: Wizard of Oz & Peripheral interactions"
   description: Exploring the creation of alternative interactions with robots.
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39476178
   readings:
@@ -76,16 +75,16 @@
       link: https://readymag.com/webspecials/dieter-rams/
     - title: Discovering social interaction strategies for robots from restricted-perception Wizard-of-Oz studies
       link: https://ieeexplore.ieee.org/document/7451752
-    - title: 'WoZ4U: an open-source wizard-of-oz interface for easy, efficient and robust HRI experiments'
+    - title: "WoZ4U: an open-source wizard-of-oz interface for easy, efficient and robust HRI experiments"
       link: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.668057/full
-    - title: 'Wizard of Oz studies: why and how'
+    - title: "Wizard of Oz studies: why and how"
       link: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.668057/full
-    - title: 'Mechanical ottoman: how robotic furniture offers and withdraws support'
+    - title: "Mechanical ottoman: how robotic furniture offers and withdraws support"
       link: https://dl.acm.org/doi/10.1145/2696454.2696461
-- class: 7
-  video_poster: snippets/class_7.png
+
+- video_poster: snippets/class_7.png
   video_src: snippets/class_7.mp4
-  title: 'Lecture: Verbal interactions'
+  title: "Lecture: Verbal interactions"
   description: The role of verbal interactions, inclusing trust, self-disclosure, and components of speech towards robots.
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
   readings:
@@ -97,37 +96,37 @@
       link: https://journals.aom.org/doi/abs/10.5465/AMR.1995.9508080335
     - title: Would You Trust a (Faulty) Robot?
       link: https://dl.acm.org/doi/10.1145/2696454.2696497
-- class: 8
-  video_poster: snippets/class_8.png
+
+- video_poster: snippets/class_8.png
   video_src:
-  title: 'Guest Lecture: Sarah Sebo'
+  title: "Guest Lecture: Sarah Sebo"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39550206
   readings:
     - title: Sarah's website
       link: https://sarahsebo.com/teaching.html
-- class: 9
-  video_poster: snippets/class_9.png
+
+- video_poster: snippets/class_9.png
   video_src:
-  title: 'Guest Lecture: Mike Forst'
+  title: "Guest Lecture: Mike Forst"
   description:
-  slides_link: 
+  slides_link:
   readings:
     - title: Mike's website
       link: https://www.mikeforstmusic.com/
-- class: 10
-  video_poster: snippets/class_10.png
+
+- video_poster: snippets/class_10.png
   video_src:
-  title: 'Lecture: Ethics in HRI'
+  title: "Lecture: Ethics in HRI"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39800608
   readings:
-    - title: 
+    - title:
       link:
-- class: 11
-  video_poster: snippets/class_11.png
+
+- video_poster: snippets/class_11.png
   video_src:
-  title: 'Lecture: Types of Studies'
+  title: "Lecture: Types of Studies"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=39852275
   readings:
@@ -139,84 +138,84 @@
       link: https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
     - title: failure to replicate
       link: https://pubmed.ncbi.nlm.nih.gov/26348332/
-- class: 12
-  video_poster: snippets/class_12.png
+
+- video_poster: snippets/class_12.png
   video_src:
-  title: 'Guest Lecture: Sindhu Kutty'
+  title: "Guest Lecture: Sindhu Kutty"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40067892
   readings:
     - title: Datasheets for Datasets
       link: https://arxiv.org/abs/1803.09010
-- class: 13
-  video_poster: snippets/class_13.png
+
+- video_poster: snippets/class_13.png
   video_src:
-  title: 'Guest Lecture: Michal Luria'
+  title: "Guest Lecture: Michal Luria"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40116615
   readings:
-    - title: Michal's google scholar 
+    - title: Michal's google scholar
       link: https://scholar.google.com/citations?user=bLShnf0AAAAJ&hl=en
-- class: 14
-  video_poster: snippets/class_14.png
+
+- video_poster: snippets/class_14.png
   video_src:
-  title: 'Guest Lecture: Hannah Pelikan'
+  title: "Guest Lecture: Hannah Pelikan"
   description:
-  slides_link: 
+  slides_link:
   readings:
     - title: Hannah's Website
       link: https://hannahpelikan.com/
-- class: 15
-  video_poster: snippets/class_15.png
+
+- video_poster: snippets/class_15.png
   video_src:
-  title: 'Guest Lecture: Mafalda Gamboa'
+  title: "Guest Lecture: Mafalda Gamboa"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40210097
   readings:
     - title: Doing Sensory Ethnography
-      link: https://methods.sagepub.com/book/mono/doing-sensory-ethnography-2e/toc 
+      link: https://methods.sagepub.com/book/mono/doing-sensory-ethnography-2e/toc
     - title: Design Ethnography
       link: https://research.monash.edu/en/publications/design-ethnography-research-responsibilities-and-futures
     - title: Living with Drones, Robots, and Young Children
       link: https://dl.acm.org/doi/10.1145/3546155.3546658
     - title: Implications for design
       link: https://dl.acm.org/doi/10.1145/1124772.1124855
-- class: 16
-  video_poster: snippets/class_16.png
+
+- video_poster: snippets/class_16.png
   video_src:
-  title: 'Guest Lecture: Filipa Correia'
+  title: "Guest Lecture: Filipa Correia"
   description:
-  slides_link: 
+  slides_link:
   readings:
     - title: Filipa's Website
       link: https://iti.larsys.pt/member/filipa-correia/
-- class: 17
-  video_poster: snippets/class_17.png
+
+- video_poster: snippets/class_17.png
   video_src:
-  title: 'Lecture: Case Studies & Behavioral Analysis'
+  title: "Lecture: Case Studies & Behavioral Analysis"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40273667
   readings:
     - title: Ch 10 HRI
-      link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf 
+      link: https://www.human-robot-interaction.org/wp-content/uploads/2024/08/human-robot-interaction-second-edition-compressed.pdf
     - title: social engagement in interaction with Nao
-      link: https://www.researchgate.net/publication/263382778_Children_with_autism_social_engagement_in_interaction_with_Nao_an_imitative_robot_-_A_series_of_single_case_experiments 
+      link: https://www.researchgate.net/publication/263382778_Children_with_autism_social_engagement_in_interaction_with_Nao_an_imitative_robot_-_A_series_of_single_case_experiments
     - title: SOCIAL ROBOT PROBO
       link: https://www.worldscientific.com/doi/abs/10.1142/S0219843613500254?srsltid=AfmBOorv5OzxWjdv_hGPDoyxJTJXdpxKiLsx2LxyK6EvpJUHAN8GpKta
-- class: 18
-  video_poster: snippets/class_18.png
+
+- video_poster: snippets/class_18.png
   video_src:
   title: Group Project Feedback
   description:
-- class: 19
-  video_poster: snippets/class_18.png
+
+- video_poster: snippets/class_18.png
   video_src:
   title: Group Project Feedback
   description:
-- class: 20
-  video_poster: snippets/class_20.png
+
+- video_poster: snippets/class_20.png
   video_src:
-  title: 'Lecture: Crowdsourcing data in Machine Learning'
+  title: "Lecture: Crowdsourcing data in Machine Learning"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40456233
   readings:
@@ -224,18 +223,18 @@
       link: https://doi.org/10.1109/LRA.2022.3223024
     - title: "No, to the Right"
       link: https://doi.org/10.1145/3568162.3578623
-- class: 21
-  video_poster: snippets/class_21.png
+
+- video_poster: snippets/class_21.png
   video_src:
-  title: 'Lecture: Collaboration and Learning'
+  title: "Lecture: Collaboration and Learning"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40522922
   readings:
-    - title: 
-- class: 22
-  video_poster: snippets/class_22.png
+    - title:
+
+- video_poster: snippets/class_22.png
   video_src:
-  title: 'Lecture: Mixed methods studies'
+  title: "Lecture: Mixed methods studies"
   description:
   slides_link: https://umich.instructure.com/courses/747985/files/folder/Slides?preview=40586493
   readings:
@@ -245,26 +244,23 @@
       link: https://dl.acm.org/doi/10.1007/978-3-030-62056-1_50
     - title: Acceptance of an assistive robot in older adults
       link: https://pubmed.ncbi.nlm.nih.gov/24855349/
-- class: 23
-  video_poster: snippets/class_23.png
+
+- video_poster: snippets/class_23.png
   video_src:
-  title: 'Guest Lecture: Yasmin Keats'
+  title: "Guest Lecture: Yasmin Keats"
   description:
-  slides_link: 
+  slides_link:
   readings:
     - title: Open Style Lab Website
       link: https://www.openstylelab.org/
-- class: 24
-  video_poster: snippets/class_24.png
+
+- video_poster: snippets/class_24.png
   video_src:
-  title: 'Group Project Work'
+  title: "Group Project Work"
   description:
-- class: 25
-  video_poster: snippets/class_25.png
+
+- video_poster: snippets/class_25.png
   video_src:
-  title: 'Surveys & Statistics / Project Work'
+  title: "Surveys & Statistics / Project Work"
   description:
   readings:
-
-
-  
