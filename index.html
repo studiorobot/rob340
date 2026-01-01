@@ -24,6 +24,7 @@ title: Class Schedule
   <!-- Css -->
   <link rel="stylesheet" href="css/core.min.css" />
   <link rel="stylesheet" href="css/skin.css" />
+  <link rel="stylesheet" href="css/custom.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
@@ -38,29 +39,25 @@ title: Class Schedule
           <div class="feature-content">
             <div class="feature-content-inner left pt-30">
               <div class="row">
-                <div id="divdiv" class="column width-7"
-                  style="display: flex; flex-direction: row; align-items: flex-start; padding-right: 0px;">
-                  <div class="profile-section"
-                    style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-right: 10px; width: 190px;">
+                <div id="divdiv" class="column width-7 divdiv-container">
+                  <div class="profile-section">
                     <img class="profile-image large rounded" src="img/class-logo.png" alt="Course image"
-                      id="profileimage" style="max-width: 100; margin-bottom: 10px;">
-                    <ul class="social-links"
-                      style="color: #000000; font-size: 8pt; padding-bottom: 0.2rem; list-style-type: none; padding-left: 0px !important; margin-top: 5px; text-align: center;">
+                      id="profileimage">
+                    <ul class="social-links">
                       {% for link in site.data.social-links %}
-                      <li style="display: block; text-align: center; margin-bottom: 8px;">
-                        <a href="{{ link }}" target="_blank" style="text-decoration: none; border: none;">
+                      <li>
+                        <a href="{{ link }}" target="_blank">
                           {% if link contains "robotdesign.studio" %}
-                          <img class="profile-image large rounded" src="lab.png"
-                            style="max-width: 26px; padding-right:2px;">
+                          <img class="profile-image large rounded social-icon-img" src="lab.png">
                           {% elsif link contains "mailto" %}
-                          <i class="fas fa-envelope" style="font-size: 24px; color: #000000; padding-right:2px;"></i>
+                          <i class="fas fa-envelope"></i>
                           {% elsif link contains "linkedin" %}
-                          <i class="fab fa-linkedin" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+                          <i class="fab fa-linkedin"></i>
                           {% elsif link contains "x.com" %}
-                          <i class="fab fa-twitter" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+                          <i class="fab fa-twitter"></i>
 
                           {% elsif link contains "github" %}
-                          <i class="fab fa-github" style="font-size: 24px; color: #000000;padding-right:2px;"></i>
+                          <i class="fab fa-github"></i>
                           {% endif %}
                         </a>
                       </li>
@@ -70,11 +67,11 @@ title: Class Schedule
 
 
 
-                  <div class="course-details" style="flex: 1;">
-                    <h5 style="margin-top: 0.5rem; color: black; font-family: 'Arial'; font-size: 14pt;">
+                  <div class="course-details">
+                    <h5 class="course-title">
                       <strong>{{ course.title }}</strong>
                     </h5>
-                    <h5 style="color: #27317E; margin-top: -1.5rem; font-family: 'Arial'; font-size: 12pt;">
+                    <h5 class="course-instructors">
                       {% assign instructors = course.instructors %}
                       {% if instructors.size > 1 %}
                       <strong>Instructors:</strong>
@@ -114,7 +111,7 @@ title: Class Schedule
                         ias[0].name }}</a>
                       {% endif %}
 
-                      <p style="padding-top:10px; color:darkslategray">This course was designed and developed by <a
+                      <p class="course-credit">This course was designed and developed by <a
                           href="https://patricialvesoliveira.com/" target="_blank">Patricia Alves-Oliveira</a>.</p>
                       {{ course.department }}<br />{{ course.university }}<br />
                       Office: {{ course.office }}
@@ -123,80 +120,18 @@ title: Class Schedule
                 </div>
 
 
-                <style>
-                  /* Desktop/Laptop styling - horizontal social icons */
-                  .social-links {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    width: 100%;
-                  }
+                <div class="column width-4 text-left">
+                  <div class="info-box">
 
-                  .social-links li {
-                    display: inline-block;
-                    margin: 0 5px 5px 0;
-                  }
-
-                  /* Mobile styling - vertical social icons */
-                  @media (max-width: 768px) {
-                    .column.width-7 {
-                      flex-direction: row !important;
-                    }
-
-                    .profile-section {
-                      width: 40px !important;
-                    }
-
-                    .social-links li {
-                      margin-bottom: 12px !important;
-                    }
-                  }
-
-                  @media (min-width: 769) {
-                    .profile-section {
-                      width: 190px !important;
-                    }
-                  }
-                </style>
-                <style>
-                  @media (max-width: 769) {
-                    .column.width-7 {
-                      flex-direction: row !important;
-                    }
-
-                    .profile-section {
-                      width: 40px !important;
-                    }
-
-                    .social-links li {
-                      margin-bottom: 12px !important;
-                    }
-
-                    #divdiv {
-                      width: 100% !important;
-                    }
-
-                    .social-links li a i {
-                      padding-right: 18px !important;
-                    }
-                  }
-                </style>
-                <div class="column width-4" style="text-align:left;">
-                  <div
-                    style="padding: 0.5em 1em; border: 2px dashed #27317E; background-color: lightskyblue; border-radius: 5px; margin-top: 0em; margin-bottom: 1.5rem;">
-
-                    <p style="color: black; font-family: 'Arial'; font-size: 9pt;">
+                    <p class="info-box-text">
                       {{ course.yellow_box.top-text }}
                     </p>
 
                     {% for section in course.yellow_box.sections %}
-                    <p style="color: #27317E; font-family: 'Arial'; font-size: 10pt;"><strong>{{ section.title
-                        }}</strong></p>
-                    <p style="color: black; font-family: 'Arial'; font-size: 9pt; margin-top: -0.7em;">
-                      <span style="margin-right: 20px;"><i class="fa-solid fa-calendar-days"></i> {{ section.date
-                        }}</span>
-                      <span style="margin-right: 28px;"><i class="fa-solid fa-clock"></i> {{ section.time }}</span>
+                    <p class="info-box-title"><strong>{{ section.title }}</strong></p>
+                    <p class="info-box-details">
+                      <span><i class="fa-solid fa-calendar-days"></i> {{ section.date }}</span>
+                      <span><i class="fa-solid fa-clock"></i> {{ section.time }}</span>
                       <span><i class="fa-solid fa-building"></i> {{ section.location }}</span>
                     </p>
                     {% endfor %}
@@ -208,10 +143,8 @@ title: Class Schedule
                 <div class="column width-2">
                   <div class="thumbnail mb-0">
 
-                    <div
-                      style="display:flex; justify-content:space-between; margin-top: -1.5rem; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                      <h5
-                        style="color: #333;text-align: left; padding-top: 1rem; margin-bottom: 0px; font-family: 'Arial';font-size: smaller;">
+                    <div class="section-header">
+                      <h5>
                         <strong>SCHEDULE</strong>
                       </h5>
                     </div>
@@ -220,44 +153,39 @@ title: Class Schedule
                     {% for section in site.data.schedule %}
                     {% if section.title and section.sessions %}
                     <div>
-                      <h6
-                        style="color: #333; font-family: 'Arial'; font-size: smaller; margin-bottom:5px; margin-top: 5px;">
+                      <h6 class="schedule-section-title">
                         <strong>{{ section.title }}</strong>
                       </h6>
                       {% for session in section.sessions %}
-                      <div
-                        style="display: flex; justify-content: left; column-gap: 10px; color: #333; font-size: 10pt;">
-                        <p style="font-family: 'Arial'; font-size: 7pt;">{{ session.date }}:</p>
-                        <p style="font-family: 'Arial'; font-size: 7pt;">{{ session.class }}</p>
+                      <div class="schedule-session">
+                        <p>{{ session.date }}:</p>
+                        <p>{{ session.class }}</p>
                       </div>
                       {% endfor %}
                     </div>
                     {% endif %}
                     {% endfor %}
 
-                    <div
-                      style="display:flex; justify-content:space-between; margin-top: 0.5rem; border-top: 1px #636363 dashed; padding-top: 0.5rem;">
-                      <h5
-                        style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial'; font-size: smaller;">
+                    <div class="grading-header">
+                      <h5>
                         <strong>GRADING</strong>
                       </h5>
                     </div>
 
                     {% for section in site.data.grading %}
-                    <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
-                      <p style="font-family: 'Arial'; font-size: 7pt;">{{ section.title }}</p>
+                    <div class="grading-item">
+                      <p>{{ section.title }}</p>
                     </div>
 
                     {% for paragraph in section.text %}
-                    <div style="display: flex; justify-content:left; column-gap: 10px;color: #333;">
-                      <p style="font-family: 'Arial'; font-size: 7pt;">{{ paragraph }}</p>
+                    <div class="grading-item">
+                      <p>{{ paragraph }}</p>
                     </div>
                     {% endfor %}
 
                     {% unless forloop.last %}
-                    <div
-                      style="display: flex; justify-content:left; column-gap: 10px;color: #333;  border-top: 1px #b8b6b6 dashed;">
-                      <p style="font-family: 'Arial'; font-size:7pt;"></p>
+                    <div class="grading-divider">
+                      <p></p>
                     </div>
                     {% endunless %}
                     {% endfor %}
@@ -265,15 +193,14 @@ title: Class Schedule
                   </div>
 
                   <div class="thumbnail mb-0">
-                    <div
-                      style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                      <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                    <div class="students-header">
+                      <h5>
                         <strong>STUDENTS</strong>
                       </h5>
                     </div>
                     {% if site.data.students.undergraduates %}
-                    <div style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 10px;color: #333;">
-                      <p style="font-family: 'Arial'; font-size:8pt;"><strong>Undergraduates</strong><br />
+                    <div class="student-list">
+                      <p><strong>Undergraduates</strong><br />
                         {% for student in site.data.students.undergraduates %}
                         {{ student }}<br />
                         {% endfor %}
@@ -281,31 +208,29 @@ title: Class Schedule
                     </div>
                     {% endif %}
                     {% if site.data.students.graduates %}
-                    <div style="margin-top:1rem; display: flex; justify-content:left; column-gap: 10px;color: #333;">
-                      <p style="font-family: 'Arial'; font-size:8pt;"><strong>Graduates</strong><br />
+                    <div class="student-list student-list-spacing">
+                      <p><strong>Graduates</strong><br />
                         {% for student in site.data.students.graduates %}
                         {{ student }}<br />
                         {% endfor %}
                       </p>
                     </div>
                     {% endif %}
-                    <div class="talk-header"
-                      style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                      <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                    <div class="talk-header">
+                      <h5>
                         <strong>INVITED TALKS</strong>
                       </h5>
                     </div>
 
                     {% for talk in site.data.talks %}
-                    <div class="talk"
-                      style="margin-top:-1rem; display: flex; justify-content:left; column-gap: 20px; color: #333; margin-bottom: 10px;">
+                    <div class="talk">
                       <!-- Image -->
                       <p>
-                        <img src="{{ talk.image }}" style="max-width: 100px; height: auto; object-fit: cover;" />
+                        <img src="{{ talk.image }}" />
                       </p>
 
                       <!-- Talk Information -->
-                      <p style="font-family: 'Arial'; font-size: 6pt;">
+                      <p>
                         <strong><a href="{{ talk.link }}">{{ talk.name }}</a></strong><br />
                         {{ talk.title }}<br />
                         {{ talk.institution }}
@@ -313,18 +238,16 @@ title: Class Schedule
                     </div>
                     {% endfor %}
 
-                    <div class="talk-header"
-                      style="display:flex; justify-content:space-between; margin-top: 1em; border-top: 1px #636363 dashed; padding-top: -0.5rem;">
-                      <h5 style="color: #333;text-align: left; padding-top: 1rem; font-family: 'Arial';">
+                    <div class="talk-header">
+                      <h5>
                         <strong>GROUP PROJECTS</strong>
                       </h5>
                     </div>
 
                     {% for project in site.data.group_projects %}
-                    <div class="talk"
-                      style="display: flex; justify-content:left; column-gap: 15px;color: #333;margin-bottom: 10px;">
+                    <div class="project">
                       <p><img src="{{ project.image }}" /></p>
-                      <p style="font-family: 'Arial'; font-size:6pt;">
+                      <p>
                         <strong><a href="{{ project.link }}" target="_blank">{{ project.name }}</a></strong>
                       </p>
                     </div>
@@ -333,15 +256,15 @@ title: Class Schedule
                   </div>
                 </div>
                 <div class="column width-9">
-                  <div class="row" style="text-align:justify;">
+                  <div class="row text-justify">
 
 
-                    <div class="column width-12" style="font-family: 'Arial'; ">
+                    <div class="column width-12 main-content">
 
                       {% for section in site.data.main %}
                       {% if section.name %}
 
-                      <h5 style="margin-bottom: 5px; margin-top: 10px;">
+                      <h5 class="main-section-title">
                         <strong>{{ section.name }}:</strong>
                       </h5>
 
@@ -352,7 +275,7 @@ title: Class Schedule
                       {% endif %}
 
                       {% if section.image == true %}
-                      <img style="margin-top: 1em; margin-bottom: 1em;" src="{{ section.image_url }}" />
+                      <img class="main-section-image" src="{{ section.image_url }}" />
                       {% endif %}
 
                       {% endfor %}
@@ -360,9 +283,8 @@ title: Class Schedule
                       {% if site.data.labs %}
                       <div class="lab-container">
 
-                        <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
-                          <h4
-                            style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
+                        <div class="mt-30 section-divider">
+                          <h4 class="section-blue-header">
                             <strong>Labs</strong>
                           </h4>
                         </div>
@@ -383,9 +305,8 @@ title: Class Schedule
                         </div>
                       </div>
                       {% endif %}
-                      <div class="mt-30" style="display: flex; justify-content: space-between; text-align: right;">
-                        <h4
-                          style="color: #fff; text-align: left; font-family: 'Arial'; font-size: 1.5em; background-color:#2c98d3; padding-left: 0.3em; padding-right:0.3em;">
+                      <div class="mt-30 section-divider">
+                        <h4 class="section-blue-header">
                           <strong>Class Lecture Summary</strong>
                         </h4>
                       </div>
@@ -393,35 +314,31 @@ title: Class Schedule
 
                   </div>
                   {% for lecture in site.data.lectures %}
-                  <div class="row" id="project{{ forloop.index }}" style="padding:1rem 0rem;">
-                    <div class="column width-5" onmouseover="PlayVideo({{ forloop.index }})"
-                      onmouseleave="StopVideoPlay({{ forloop.index }})" style="padding:0px; padding-left:15px;">
-                      <video loop muted preload="auto" playsinline id="video{{ forloop.index }}"
-                        poster="{{ lecture.video_poster }}"
-                        style="width: 320px; height: 180px;margin-top: 0.7rem; object-fit: cover;">
-                        <source type="video/mp4" src="{{ lecture.video_src }}"
-                          style="width: 300px; height: 220px; object-position: center;">
+                  <div class="row lecture-row" id="project{{ forloop.index }}" onmouseover="PlayVideo({{ forloop.index }})" onmouseleave="StopVideoPlay({{ forloop.index }})">
+                    <div class="column width-5 lecture-video-container">
+                      <video loop muted preload="auto" playsinline id="video{{ forloop.index }}" class="lecture-video"
+                        poster="{{ lecture.video_poster }}">
+                        <source type="video/mp4" src="{{ lecture.video_src }}">
                       </video>
                     </div>
-                    <div class="column width-7" style="padding:0px; padding-right:15px;" id="magdisplay">
-                      <h5 style="color: #2c98d3; font-weight: bold;">CLASS {{ forloop.index }}
-                        <span style="color:#27317E">|</span>
-                        <span style="color:black;">{{ lecture.title }}</span>
-                        <span style="color:#27317E">|</span> <a href="{{ lecture.slides_link }}" target="_blank"
-                          style="border: none; color: #3b87c1;">&nbsp;SLIDES</a>
+                    <div class="column width-7 lecture-content" id="magdisplay">
+                      <h5 class="lecture-title">CLASS {{ forloop.index }}
+                        <span class="lecture-title-separator">|</span>
+                        <span class="lecture-title-text">{{ lecture.title }}</span>
+                        <span class="lecture-title-separator">|</span> <a href="{{ lecture.slides_link }}"
+                          target="_blank" class="lecture-slides-link">&nbsp;SLIDES</a>
                       </h5>
-                      <div class="authors" style="text-align: left;">{{ lecture.description }}</div>
-                      <div style="font-weight: bold;">
+                      <div class="lecture-authors">{{ lecture.description }}</div>
+                      <div>
                       </div>
                       {% if lecture.readings %}
                       {% if lecture.readings[0].title %}
-                      <div
-                        style="margin-top: 0.5em; background-color: lightskyblue; color: #333; padding: 0.5em; border: 1px #333 dashed; border-radius: 5px;">
-                        <h5 style="margin-bottom: 0.5em;"><strong>Readings:</strong></h5>
-                        <ul style="margin-top: 0; margin-bottom:0px;">
+                      <div class="lecture-readings-box">
+                        <h5><strong>Readings:</strong></h5>
+                        <ul>
                           {% for reading in lecture.readings %}
                           <li>
-                            <a href="{{ reading.link }}" target="_blank" style="border: none; color: navy;">
+                            <a href="{{ reading.link }}" target="_blank">
                               {{ reading.title }}
                             </a>
                           </li>
@@ -448,13 +365,13 @@ title: Class Schedule
 			</div> -->
   <!-- Content End -->
   <!-- Footer -->
-  <footer class="footer" style="background-color:#27317E">
+  <footer class="footer footer-custom">
     <div class="footer-bottom">
       <div class="row">
         <div class="column width-12">
           <div class="footer-bottom-inner center">
-            <p class="copyright pull-left clear-float-on-mobile" style="color:white;">
-              &copy; Website design adapted from <a href="https://www.lianghe.me/" style="color:white;">Liang He</a>.
+            <p class="copyright pull-left clear-float-on-mobile footer-text">
+              &copy; Website design adapted from <a href="https://www.lianghe.me/" class="footer-link">Liang He</a>.
             </p>
           </div>
         </div>
@@ -462,131 +379,6 @@ title: Class Schedule
     </div>
   </footer>
 
-
-  <style>
-    .lab-container {
-      margin-top: 20px;
-    }
-
-    .lab-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    /* Tablet View: 2 Columns */
-    @media (max-width: 992px) {
-      .lab-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* Mobile View: 1 Column */
-    @media (max-width: 600px) {
-      .lab-grid {
-        grid-template-columns: repeat(1, 1fr);
-      }
-
-
-      .row {
-        display: flex;
-        flex-direction: column;
-        /* Stack the columns vertically */
-      }
-
-      .column.width-2,
-      .column.width-9 {
-        width: 100%;
-        /* Make both columns take full width */
-      }
-
-      .column.width-9 {
-        order: -1;
-        /* Move the 'width-9' column above 'width-2' */
-      }
-    }
-
-    .lab-item {
-      display: flex;
-      align-items: center;
-      /* Ensures text and image align properly */
-      gap: 15px;
-      justify-content: space-evenly;
-      padding: 10px;
-      background: #f9f9f9;
-      border-radius: 8px;
-    }
-
-    .lab-image {
-      width: 80px;
-      /* Fixed width */
-      height: 80px;
-      /* Fixed height for consistency */
-      object-fit: contain;
-      /* Prevents distortion */
-      border-radius: 5px;
-    }
-
-    .lab-info {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 250px;
-      /* Prevents excessive stretching */
-      text-align: left;
-      /* Ensures text stays aligned naturally */
-      white-space: normal;
-      /* Allows proper word wrapping */
-      word-spacing: normal;
-      /* Prevents extra gaps between words */
-    }
-
-    .lab-link {
-      font-size: 16px;
-      font-weight: bold;
-      color: #007bff;
-      text-decoration: none;
-      display: inline-block;
-      /* Ensures the text behaves naturally */
-      white-space: normal;
-      /* Prevents stretching */
-      word-spacing: normal;
-      /* Resets unnecessary spacing */
-    }
-
-    .lab-description {
-      font-size: 14px;
-      color: #666;
-      margin-top: 5px;
-      max-width: 250px;
-      white-space: normal;
-      /* Allows normal word wrapping */
-      word-spacing: normal;
-      /* Prevents excessive gaps */
-    }
-
-    /* Mobile View: 1 Column */
-    @media (max-width: 1024px) {
-
-      .row {
-        display: flex;
-        flex-direction: column;
-        /* Stack the columns vertically */
-      }
-
-      .column.width-2,
-      .column.width-9 {
-        width: 100%;
-        /* Make both columns take full width */
-      }
-
-      .column.width-9 {
-        order: -1;
-        /* Move the 'width-9' column above 'width-2' */
-      }
-    }
-  </style>
 
   <script src="js/timber.master.min.js"></script>
   <script>
@@ -599,8 +391,12 @@ title: Class Schedule
       var div = document.getElementById(proj_name);
       div.style.backgroundColor = "#efefef";
       div.style.transition = "background-color 0.7s";
-      v.autoplay = true;
-      v.load();
+      // Only start playing if it's paused or ended — don't reload the video (no load/autoplay)
+      if (v && (v.paused || v.ended)) {
+        v.play().catch(function (e) {
+          // Ignore play errors (autoplay/security restrictions)
+        });
+      }
     }
     function StopVideoPlay(num) {
       var name = "video" + num;
@@ -609,8 +405,10 @@ title: Class Schedule
       var div = document.getElementById(proj_name);
       div.style.backgroundColor = "#fff";
       div.style.transition = "background-color 0.7s";
-      v.autoplay = false;
-      v.load();
+      // Pause the video but do not reset playback position to avoid restarting on re-hover
+      if (v && !v.paused) {
+        v.pause();
+      }
     }
     function PlayVideo_unpublished(num) {
       var name = "video" + num;
@@ -640,98 +438,6 @@ title: Class Schedule
     }
 
   </script>
-  <style>
-    /* Tablet and Mobile Views */
-    @media (max-width: 1140px) {
-      .row {
-        flex-direction: column;
-      }
-
-      .column.width-4,
-      .column.width-5,
-      .colum.width-6,
-      .column.width-7 {
-        width: 100%;
-      }
-
-      .column.width-7 {
-        margin-top: 1em;
-        /* Add some space between the video and the content */
-      }
-
-      #magdisplay {
-        margin-top: 1rem;
-      }
-    }
-
-    /* Tablet and smaller screens */
-    @media (min-width:769px) and (max-width: 1140px) {
-
-      /* Invited Talks Section */
-      .talk {
-        display: flex;
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        /* Center the content */
-        margin-bottom: 1rem;
-        /* Space between each talk */
-      }
-
-      .talk img {
-        max-width: 100%;
-        /* Make the image responsive */
-        height: auto;
-        /* Maintain aspect ratio */
-        margin-bottom: 0.5rem;
-        /* Space between the image and the text */
-      }
-
-      .talk p {
-        font-size: 10pt;
-        /* Adjust font size for better readability */
-        margin-top: 0.5rem;
-        /* Add space between text and image */
-        text-align: center;
-        /* Center the text */
-      }
-
-      /* Group Projects Section */
-      .talk {
-        display: flex;
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        /* Center the content */
-        margin-bottom: 1rem;
-        /* Space between each project */
-      }
-
-      .talk img {
-        max-width: 100%;
-        /* Make the image responsive */
-        height: auto;
-        /* Maintain aspect ratio */
-        margin-bottom: 0.5rem;
-        /* Space between the image and the text */
-      }
-
-      .talk p {
-        font-size: 10pt;
-        /* Adjust font size for better readability */
-        margin-top: 0.5rem;
-        /* Add space between text and image */
-        text-align: center;
-        /* Center the text */
-      }
-    }
-
-
-    .social-links {
-
-      margin-left: 5px !important;
-    }
-  </style>
 
 </body>
 
